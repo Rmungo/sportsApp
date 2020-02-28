@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image:  
+    linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),url('http://i.imgur.com/KXmAr4e.jpg');
+    background-size: cover;
+}
+
+.welcome , .questionBubble {
+    border: 2px solid black;
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 15px;
+    border-radius: 30px;
+    background-color: tan;
+    
+}
+
+.start {
+    width: 120px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+}
+
+.question {
+    font-weight: bold;
+    padding: 5px;
+    font-size: larger;
+    
+}
+
+.answers {
+    height: 450px;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.teams {
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+}
+
+.option {
+    height: 140px;
+    border: 3px solid black;
+    padding: 5px;
+    background-color: tan;
+    font-weight: bold;
+    display: flex;
+    border-radius: 15px;
+    padding: 5px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.teamLogo {
+    height: 95px;
+    width: 100px;
+    position: relative;
+    top: 5px;
+}
+
+
+
+.counter {
+    height: 40px;
+    width: 150px;
+    border: 3px solid black;
+    padding: 5px;
+    background-color: tan;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.questionCounter {
+    display: inline-block;
+    position: relative;
+    bottom: 12px;
+}
+
+.legend{
+    position: relative;
+}
+
+.correctText{
+width: 200px;
+position: relative;
+bottom: 12px;
+left: 3px;
+
+}
+
+#correctCounter{
+    position: absolute;
+    right: 5px;
+    width: 200px;
+}
+
+.answerBubble {
+    border: 2px solid black;
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 15px;
+    border-radius: 30px;
+    background-color: tan;
+    
+}
+
+.correctInfo {
+    font-weight: bold;
+    font-size: larger;
+}
+
+#correct {
+    font-size: 25px;
+}
+
+.greenCheck {
+    height: 30px;
+    width: 30px;
+     display: inline-block; 
+    position: relative;
+    right: 70px;
+    top: 55px;
+} 
+
+.picContainer{
+    position: relative;
+    bottom: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.answerPic {
+    height: 120px;
+    width: 150px;
+    border: 2px solid black;
+}
+
+.checkAndTitle {
+    position: relative;
+    bottom: 50px;
+}
+
+.extraInfo{
+    position: relative;
+    bottom: 30px;
+}
+
+.nextQuestion{
+    height: 30px;
+    background-color: green;
+    color: white;
+    border-radius: 25px;
+}
+
+.redX {
+        height: 40px;
+        width: 50px;
+        display: inline-block; 
+        position: relative;
+        right: 125px;
+        top: 63px;
+}
+
+.resultPic {
+    height: 150px;
+    width: 175px;
+    border: 2px solid black;
+}
