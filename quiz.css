@@ -1,4 +1,4 @@
- /* * {
+    /* * {
     box-sizing: border-box;
 }
 
@@ -49,15 +49,15 @@ body {
     justify-content: space-around;
     width: 100%;
     list-style: none;
-}
+} */
 
-.option {
-    height: 140px;
-    border: 3px solid black;
-    padding: 5px;
-    background-color: tan;
-    font-weight: bold;
-    display: flex;
+ .option {
+    /* height: 140px; */
+    border: 1px solid gray;
+    /* padding: 5px; */
+    /* background-color: tan; */
+    /* font-weight: bold; */
+    /* display: flex;
     border-radius: 15px;
     padding: 5px; 
     text-align: center;
@@ -65,8 +65,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    
-}
+     */
+}  
 
 .teamLogo {
     height: 95px;
@@ -75,7 +75,7 @@ body {
     top: 5px;
 }
 
-
+/* 
 
 .counter {
     height: 40px;
@@ -109,8 +109,8 @@ left: 3px;
     position: absolute;
     right: 5px;
     width: 200px;
-}
-
+} */
+/* 
 .answerBubble {
     border: 2px solid black;
     width: 700px;
@@ -130,7 +130,7 @@ left: 3px;
 
 #correct {
     font-size: 25px;
-}
+} */
 
 .greenCheck {
     height: 30px;
@@ -154,23 +154,23 @@ left: 3px;
     width: 150px;
     border: 2px solid black;
 }
-
+/* 
 .checkAndTitle {
     position: relative;
     bottom: 50px;
-}
-
+} */
+/* 
 .extraInfo{
     position: relative;
     bottom: 30px;
-}
-
+} */
+/* 
 .nextQuestion{
     height: 30px;
     background-color: green;
     color: white;
     border-radius: 25px;
-}
+} */
 
 .redX {
         height: 40px;
@@ -185,4 +185,4 @@ left: 3px;
     height: 150px;
     width: 175px;
     border: 2px solid black;
-}  */
+}   
