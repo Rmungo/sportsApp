@@ -354,7 +354,8 @@ function buildAnswerBubble(){
               <div class pic22> </div>
        </div>
        <div class="extraInfo">
-       <p class= "answerInfo"></p>
+       <p class= "answerInfo">
+</p>
        <button class="nextQuestion" type="submit">Next Question</button>
        <button class="getResults" type="submit">Get Results</button>
    </form>
@@ -394,7 +395,6 @@ function handleWrongClicks(){
        $(".answerKey").hide();
        $('.greenCheck').hide();
        $('.getResults').hide();
-       $('.redX').show();
        $(".answerBubble").show();
        showWrongDisplay();
        })
@@ -421,16 +421,21 @@ function handleRightClicks(){
               $('.redX').hide();
               $('.getResults').hide();
               $(".answerBubble").show();
-              $('.greenCheck').show();
-              showCorrectDisplay();
+              showRightDisplay();
        })
 
 };
 
-function showCorrectDisplay(){
-       let i = 0;
-
-
+function showRightDisplay(){
+              let i = 0;
+              $('.correctInfo').text(answerTitle[0]);
+              $('.picContainer').append(answerPics[i].pic1);
+              $('.picContainer').append(answerPics[i].pic2);
+              $('.picContainer').append(answerPics[i].pic3)
+              $('.picContainer').append(answerPics[i].pic4)
+              $('.answerInfo').append(answerInfo[i].info)
+       
+       
 }
 
 
