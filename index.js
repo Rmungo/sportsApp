@@ -406,6 +406,7 @@ function showWrongDisplay(event){
        $('.picContainer').append(answerPics[i].pic3)
        $('.picContainer').append(answerPics[i].pic4)
        $('.answerInfo').append(answerInfo[i].info)
+       nextQuestion();
 
 
 }
@@ -431,8 +432,18 @@ function showRightDisplay(){
               $('.picContainer').append(answerPics[i].pic3);
               $('.picContainer').append(answerPics[i].pic4);
               $('.answerInfo').append(answerInfo[i].info);
+              nextQuestion();
+     
+}
 
-       
+function nextQuestion(){
+       $('.nextQuestion').on('click', function(event){
+              $(".legend").show();
+              $(".questionBubble").show();
+              $(".answerKey").show();
+              $(".answerBubble").hide();    
+       })
+
 }
 
 
