@@ -318,7 +318,7 @@ const finalPics = [
 ]
 
 
-
+let i = 0;
 let score = 0;
 let questionNumber = 0;
 
@@ -365,7 +365,6 @@ function buildAnswerBubble(){
 
 // RENDER QUESTIONS --- Function will display the question to the user 
 function renderQuestion(){
-    let i = 0
     let quizQuestion = STORE[i].question;
     $('.questionBubble').html(`<p class="question">${quizQuestion}</p>`);
 }
@@ -401,7 +400,6 @@ function handleWrongClicks(){
 }
 
 function showWrongDisplay(event){
-       let i = 0;
        $('.correctInfo').text(answerTitle[1]);
        $('.picContainer').append(answerPics[i].pic1)
        $('.picContainer').append(answerPics[i].pic2);
@@ -427,14 +425,13 @@ function handleRightClicks(){
 };
 
 function showRightDisplay(){
-              let i = 0;
               $('.correctInfo').text(answerTitle[0]);
               $('.picContainer').append(answerPics[i].pic1);
               $('.picContainer').append(answerPics[i].pic2);
-              $('.picContainer').append(answerPics[i].pic3)
-              $('.picContainer').append(answerPics[i].pic4)
-              $('.answerInfo').append(answerInfo[i].info)
-       
+              $('.picContainer').append(answerPics[i].pic3);
+              $('.picContainer').append(answerPics[i].pic4);
+              $('.answerInfo').append(answerInfo[i].info);
+
        
 }
 
