@@ -8,7 +8,7 @@ const STORE =
                                     `<li class="option">The New York Yankees
                                         <input type= "image" class="wrong teamLogo" id ="yanks" alt="NY Yankees" src ="http://www.stickpng.com/assets/images/584d4b740a44bd1070d5d494.png"></li>`,
                                     `<li class="option">The Los Angeles Lakers
-                                        <input type='image'class="wrong teamLogo" id ="lakers" alt="LA Lakers" src ="https://seeklogo.com/images/L/los-angeles-lakers-logo-805BBEB14F-seeklogo.com.png">`,
+                                        <input type='image'class="wrong teamLogo" id ="lakers" alt="LA Lakers" src ="https://seeklogo.com/images/L/los-angeles-lakers-logo-805BBEB14F-seeklogo.com.png"></li>`,
                                     `<li class="option">The Dallas Cowboys
                                         <input type='image' class="wrong teamLogo" id ="dal" alt="Dallas Cowboys" src="https://i.pinimg.com/originals/6e/01/97/6e0197b33d0ba5f2ef3d1503e9bc5b45.png"></li>`,
                                     `<li class="option">The San Francisco Giants
@@ -101,11 +101,223 @@ const STORE =
                                   `<li class="option">The Chicago White Sox
                                          <input type="image" class="wrong teamLogo" id ="chisox" alt="White Sox" src ="http://assets.stickpng.com/thumbs/584d4aff0a44bd1070d5d48d.png"></li> `    
                              ],
-                    correctAnswer: 'Florida Marlins'
+                    correctAnswer: 'Oakland Athletics'
 
                       }
 
 ];
+
+const answerTitle = ["Nothin' but Net!!!", "Swing and a Miss"];
+
+const answerInfo = [
+       
+       { 
+         question: 1,
+         team: "Sf Giants",
+         info: `Out of all the great teams in American professional sports that
+               are synonmous with winning and success, in terms of winning games
+               no one has had more success than <u>The San Francisco Giants</u>. 
+               Dating all the way back from thier humble begginings in the Polo Grounds 
+               as <u>The New York Giants</u> - they have amassed the most amount of 
+               wins with a win loss record of <u>11,165 – 9,687</u>. Dems a lot of W's...`
+       },
+       {
+         question: 2,
+         team: 'Arizona Cardinals',
+         info: `When we think about all the great historical football teams that 
+                have graced the gridiron for more than a century, very few of us think 
+                look to the desert to find the oldest team. Establishedin 1898 as 
+                the Morgan Athletic Club,  the Cardinals have called Chicago, St.Louis 
+                and now Arizona home. For a sport that is synonomous with winter, cold, 
+                snow and mud, who'da thought that the sport's oldest representative 
+                would hail from the Valley of the Sun.`
+       },       
+       {
+         question: 3,
+         team: 'New York Knicks',
+         info: `In 1947 (the same year that Jackie Robinson broke the color barrier in MLB) 
+         the New York Knicks drafted Wataru Misaka in the BBA/NBA Draft. Wataru, a second 
+         generation Japanese American from the University of Utah, led the University of Utah
+          to two NCAA championships and a NIT Championship which at the time was the most 
+          prestegious of the two tournaments at the time. Although, Wataru Misaka's tenrue
+           with the Knicks was short lived - he would be offered a position with the 
+           Harlem Globetrotters (which he would turn down) and be inducted into the 
+           Utah Sports of Hall of Fame. He and his wife, Kate, had two children. 
+           Misaka died at the age of 95 on November 20, 2019 in Salt Lake City.`
+       }, 
+       {
+         question: 4,
+         team: 'Detroit Red Wings',
+         info: `After only playing 20 games in 4 years after being drafted by the 
+         Winnipeg Jets, Kris Draper was traded to the Detroit Red Wings for only 
+         ONE AMERICAN DOLLAR. Draper would go on to become a four-time winner of 
+         the Stanley Cup (all with Detroit), a Frank J. Selke Trophy winner and 
+         score over 100 goals in his NHL career with the Red Wings. Draper was 
+         a member of the famous "Grind Line" in Detroit, consisting of himself, 
+         Kirk Maltby and either Joe Kocur or Darren McCarty. The Winnipeg Jets, 
+         three years later, would fold and cease operations. Considering that 
+         they traded a player Kris Draper's caliber for merely $1 - it should be 
+         of no suprise to anyone that the Winnipeg Jets are no longer around. `
+       }, 
+       {
+         question: 5,
+         team: 'Oakland Athletics',
+         info: `23 people On September 8, 1916, the New York Yankees came to Philadelphia 
+         to play the hapless Athletics. The fans sitting in Shibe Park for the rain-delayed 
+         game were outnumbered by the men in uniform. In fact, when the Yankees were at bat,
+          they had more players on the bench than fans in the seats. After an 8-2 win over 
+          the Yankees, for the only time in major league history, a team was two games back 
+          for every fan in attendance. 46 games back of the first place Red Sox and an 
+          announced attendance of 23. This trend of low-attendance has plauged the Athletics
+           throughout thier history. Moving from Philadephia, then to Kansas City and finally
+            to Oakland. Even currently, the A's struggle to draw fans and are in talks of
+          getting a new stadium either inside of Oakland or relocating for the third time
+          in 65 years.`
+       }, 
+       ]
+
+const answerPics = [
+       {
+               team: 'SF giants',
+               pic1: '<img class="answerPic picOne" src="https://tse4.mm.bing.net/th?id=OIP.vdWaRRPcjYox4uIC5z9v0QHaJ5&pid=Api&P=0&w=300&h=300"alt="Monte Irvin: Giants First Black Player">',
+               pic2: '<img class="answerPic picTwo" src="https://tse3.mm.bing.net/th?id=OIP.MivcL5RA1OluKZuOC86ulgHaEn&pid=Api&P=0&w=303&h=190" alt="Matt Williams: The Marine">',
+               pic3: '<img class="answerPic picThree"src="https://tse2.mm.bing.net/th?id=OIP.92keH2Enda0IVQaI6hYjQQHaE7&pid=Api&P=0&w=235&h=157" alt="Willie Mays: Maybe The Greatest Of All Time">',
+               pic4: '<img class="answerPic picFour" src="http://s3.amazonaws.com/darkroom-cdn/2014/10/royals-giants-world-series-violence073.jpg" alt="Giants First Title in San Francisco, 2010"> '
+       },
+       {
+              team: 'Arizona Cardinals ',
+              pic1: ' <img class="answerPic picOne" src="http://cdn.bleacherreport.net/images_root/slides/photos/001/014/297/cardsMorganAthleticClub_display_image.jpg?1308023951"',
+              pic2: '<img class="answerPic picTwo" src="http://www.cardinalsgab.com/wp-content/uploads/2009/12/Kurt-Warner.jpg">',
+              pic3: '<img class="answerPic picThree" src="https://sportsteamhistory.com/wp-content/uploads/2017/01/st.-louis-cardinals-football.jpg">',
+              pic4: '<img class="answerPic picFour" src="https://clutchpoints.com/wp-content/uploads/2018/10/Larry_Fitzgerald.jpg"> '
+       },
+       {
+              team: 'New York Knicks',
+              pic1: '<img class="answerPic picOne" src="https://tse1.mm.bing.net/th?id=OIP.9db8Xbn5xUrtVkeMmsm6sgHaF8&pid=Api&P=0&w=206&h=166"',
+              pic2: '<img class="answerPic picTwo" src="https://cdn.japantimes.2xx.jp/wp-content/uploads/2018/12/sp-ed-e-20181229-870x698.jpg">',
+              pic3: '<img class="answerPic picThree" src="https://tse3.mm.bing.net/th?id=OIP.NxF1sqx6vOao6HxpL2RS7AHaD4&pid=Api&P=0&w=304&h=160">',
+              pic4: '<img class="answerPic picFour"src="https://theundefeated.com/wp-content/uploads/2019/11/AP_080910048828-e1574881859339.jpg?w=700"> '
+       },
+       {
+              team: 'Detroit Red Wings',
+              pic1: '<img class="answerPic picOne" src="http://www4.pictures.gi.zimbio.com/Dallas+Stars+v+Detroit+Red+Wings+Game+dlltkirDBYkx.jpg"',
+              pic2: '<img class="answerPic picTwo" src="https://tse4.mm.bing.net/th?id=OIP.O-YQ685EObihAOil9ZMV3gAAAA&pid=Api&P=0&w=300&h=300">',
+              pic3: '<img class="answerPic picThree" src="https://media.gettyimages.com/photos/center-kris-draper-of-the-detroit-red-wings-shoots-against-the-the-picture-id56442151">',
+              pic4: '<img class="answerPic picFour"src="https://i.pinimg.com/originals/ec/89/97/ec899753e3efcc2fdff0c71b3555dafb.jpg"> '
+              
+       },
+       {
+              team: 'Oakland Athletics ',
+              pic1: '<img class="answerPic picOne" src="https://sfbay.ca/home/wp-content/uploads/2016/09/160925_Rangers_Athletics1077_bay114.jpg"',
+              pic2: '<img class="answerPic picTwo" src="http://sfbay.ca/home/wp-content/uploads/2012/10/2012-08-02-20.31.39-1000x563.jpg">',
+              pic3: '<img class="answerPic picThree" src="http://assets.sbnation.com/assets/1050595/oakland_as_fan_attendance_coliseum.jpg">',
+              pic4: '<img class="answerPic picFour"src="http://ww3.hdnux.com/photos/07/00/05/1835342/19/628x471.jpg"> '
+              
+       }
+
+]
+
+const finalResults = [
+              {
+                     score: 5,
+                     title: "You're Batting .1000!!!!",
+                     info: `Way to go!!! You answered correct on all 5 of the toughest
+                            sports questions out there. You definitely know your way around
+                            the football field and the baseball diamond. When it comes to sports
+                            trivia - you my friend are a Hall Of Famer!!!`
+              },
+              {
+                     score: 4,
+                     title: "You're an All-Star!!",
+                     info: `Wow, 4 out of 5!! No wonder why everyone in the league wants you. 
+                     My phone has been ringing off the hook trying to get me to trade you. But
+                     with numbers like yours, there's no way I can let go of a talent like you.
+                     You hear that???.... You know what that is? Thats endorsement deals, tv 
+                     commercials, shoe deals, you name it - all coming your way. You just this up
+                     and dont get complacent and keep raising your game.... pretty soon you'll be 
+                     in a gold jacket!!!`
+              },
+              {
+                     score: 3,
+                     title: "Hey, Even the Greats Need Role-Players...",
+                     info: `Look, not everyone can be Micheal Jordan or Derek Jeter. Some
+                     people are just B.J. Armstrong or Chuck Knoblauch. And with a 3 out of 5
+                     you've proven that you belong on the team and deserve a spot - you're just 
+                     probably not the person we want to give the ball to with the game on the line.
+                     In any event, you can work hard to seperate yourself from the pack and raise 
+                     your game and prove me wrong... or you can settle for being A.C Green instead of 
+                     Magic Johnson...even the greats need role-players. `
+              },
+              {
+                     score: 2,
+                     title: "Could Use Some More Work in the Cage",
+                     info: `2 out 5, not the best but good enough that we know you got some talent.
+                     My advice? Go hit the weight room, stop by the film room a few times a week and 
+                     do some more work in the cage. It's a long season, so theres plenty of time to
+                     turn it around, but i'd get on it now - you don't a bad outing to turn into a 
+                     slump....thats how you find a pink slip in your locker.`
+              },
+              {
+                     score: 1,
+                     title: "Gotta turn it around, Kid",
+                     info: `Look Kid, we like you and you got great hustle, but 1 out of 5
+                     is not gonna keep you on this team much longer. Take a few deep breaths,
+                     and maybe get with the assistant coach to go over your mechanics. When you do, 
+                     why don't ya' come back and give it another go. `
+              },
+              {
+                     score: 0,
+                     title: "Pink Slip",
+                     info: `Sports is a buisness kid. And as much as we'd like to keep you on
+                     the team, we have enough 'club house' guys - what we need is someone that can produce
+                     and put numbers up. 0 out of 5 is not gonna get it done - we need to open up this 
+                     roster spot to someone who can help us. Go home, work on your game and if you can
+                     improve your performance in the future - we'll reach out. Until then..... 
+                     Clean out your locker.. `
+              }
+
+]
+
+const finalPics = [
+       {
+       score: 5,
+       pic1:`<img class="resultPic" src="http://www.profootballhof.com/assets/1/19/Brooks-Derrick-GJ-Lead.jpg?45270" alt="HOF jacket ceremony"></img> `,
+       pic2: `<img class="resultPic" src="http://sportschump.net/wp-content/uploads/2013/05/chad-ochocinco-hof-jacket.jpg" alt="Future Hall of Famer">`,
+       pic3: `<img class="resultPic" src="https://s3.amazonaws.com/s3.wpgcfm.radio.com/styles/delta__775x515/s3/ray_lewis.jpg?itok=nlwdkaFX&c=96740be446a2477a37ca698c9e290440" alt="Ray Lewis HOF">`
+       },
+       {
+       score: 4,
+       pic1: `https://tse3.mm.bing.net/th?id=OIP.BoeQzMdzwL6Yn4XwbLW-zAHaE8&pid=Api&P=0&w=284&h=190`,
+       pic2: `https://i.ytimg.com/vi/wBCw82QKU1g/maxresdefault.jpg`,
+       pic3: `http://www1.pictures.zimbio.com/gi/2019+Honda+NHL+All+Star+Game+PfxyMlFUBP0x.jpg` 
+       },
+       {
+       score: 3,
+       pic1: `https://www.basketusa.com/wp-content/uploads/2013/09/BJ.jpg` ,
+       pic2: `http://www.bestsportsphotos.com/sc_images/products/t_47638.jpg` ,
+       pic3: `https://i.ytimg.com/vi/9OSuzLAZjZQ/maxresdefault.jpg`
+       },
+       {
+       score: 2,
+       pic1: `http://www.saturdaydownsouth.com/wp-content/uploads/2015/03/MG_2345.jpg` ,
+       pic2: `http://static5.businessinsider.com/image/51fa6e926bb3f7933d000008-1200/the-film-room.jpg` ,
+       pic3: `https://patch.com/img/cdn/users/207354/2011/11/raw/fdcdaad88c3c9dde64b7a6e4b0c27acd.jpg?width=705` 
+       },
+       {
+       score : 1,
+       pic1: `http://media.masslive.com/sports_impact/photo/10091180-large.jpg` ,
+       pic2: `http://media.gettyimages.com/photos/soccer-player-sitting-on-bench-picture-id157718601` ,
+       pic3: `http://4.bp.blogspot.com/-In8EZkmSDgs/TfutRDQmEeI/AAAAAAAAAKM/184dEiKZXE8/s1600/sad%2Bfootball%2Bplayer.JPG`
+       },
+       {
+       score : 0,
+       pic1: `https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1217631.jpg`,
+       pic2: `http://www.it-career-coach.net/wp-content/uploads/2009/01/pinkslip.jpg`,
+       pic3: `https://www.incimages.com/uploaded_files/image/970x450/getty_618526794_345052.jpg`
+       },
+]
+
+
 
 let score = 0;
 let questionNumber = 0;
@@ -121,13 +333,33 @@ function startQuiz(){
         renderQuestion();
         displayCounters();
         displayOptions();
+        buildAnswerBubble();
     })
 };
 
 // BUILD BODY --- Function that adds four divs to the body that will be the building blocks
 // for the presentation of the app visually. 
 function buildBody(){
-    $('body').html('<div class ="legend"></div><div class = "questionBubble"></div><form  class ="answerKey"></form>');
+    $('body').html('<div class ="legend"></div><div class="answerBubble" id="correctAnswer"></div><div class = "questionBubble"></div><form  class ="answerKey"></form>');
+    
+}
+
+function buildAnswerBubble(){
+       $('.answerBubble').html(`<div class ="checkAndTitle">
+       <img class="redX" src="http://www.clipartbest.com/cliparts/niB/Bq8/niBBq8A9T.png" alt="red X">
+       <img class="greenCheck" src="http://www.clipartbest.com/cliparts/nTB/9dE/nTB9dEnTA.png" alt="greenCheck">
+       <p class= "correctInfo" id="correct"> </p> 
+       </div>
+       <div class="picContainer">
+              <div class pic22> </div>
+       </div>
+       <div class="extraInfo">
+       <p class= "answerInfo"></p>
+       <button class="nextQuestion" type="submit">Next Question</button>
+       <button class="getResults" type="submit">Get Results</button>
+   </form>
+   </div>`)
+   $('.answerBubble').hide();
 }
 
 // RENDER QUESTIONS --- Function will display the question to the user 
@@ -149,15 +381,56 @@ function displayOptions(){
     let teamAnswers = STORE[0].answers
     $('.answerKey').html("<div class = 'answers'><ul class ='teams'></ul></div>")
      $('.teams').html(`${teamAnswers}`)
-     testClicks();
+     handleWrongClicks();
+     handleRightClicks();
      
 }
 
-function testClicks(){
-       $('.option').on('click',function(event){
-              event.preventDefault();
-              alert('this works');
+function handleWrongClicks(){
+       $('.wrong').on('click',function(event){
+       event.preventDefault();
+       $(".legend").hide();
+       $(".questionBubble").hide();
+       $(".answerKey").hide();
+       $('.greenCheck').hide();
+       $('.getResults').hide();
+       $('.redX').show();
+       $(".answerBubble").show();
+       showWrongDisplay();
        })
+}
+
+function showWrongDisplay(event){
+       let i = 0;
+       $('.correctInfo').text(answerTitle[1]);
+       $('.picContainer').append(answerPics[i].pic1)
+       $('.picContainer').append(answerPics[i].pic2);
+       $('.picContainer').append(answerPics[i].pic3)
+       $('.picContainer').append(answerPics[i].pic4)
+       $('.answerInfo').append(answerInfo[i].info)
+
+
+}
+
+function handleRightClicks(){
+       $('.right').on('click',function(event){
+              event.preventDefault();
+              $(".legend").hide();
+              $(".questionBubble").hide();
+              $(".answerKey").hide();
+              $('.redX').hide();
+              $('.getResults').hide();
+              $(".answerBubble").show();
+              $('.greenCheck').show();
+              showCorrectDisplay();
+       })
+
+};
+
+function showCorrectDisplay(){
+       let i = 0;
+
+
 }
 
 
