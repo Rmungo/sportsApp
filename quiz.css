@@ -93,8 +93,9 @@ body {
     bottom: 12px;
 }
 
-.legend{
+.legend {
     position: relative;
+    bottom: 35px;
 }
 
 .correctText{
@@ -140,6 +141,11 @@ left: 3px;
     right: 125px;
     top: 55px;
 } 
+
+.legend2 {
+    width: 200px;
+    display: block;
+}
 
 .picContainer{
     position: relative;

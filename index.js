@@ -397,7 +397,7 @@ function displayScore(){
   };
 
 function questCount(){
-       $('.legend2').html(` <div class = "counter"> <p class="questionCounter">
+       $('.legend2').html(` <div class = "counter"> <p class="questionCounter correctText">
        Question ${STORE.currentQuestion} out of 5</p></div>`);
   }
 
@@ -489,33 +489,33 @@ function displayFinalScore(){
               $('.picContainer').append(finalPics.scorePics[1].pic3);
               $('.answerInfo').append(finalResults.scoreTitle[1].info);
               }
-              else if (STORE.answeredCorrectly === 3){
-                     $('.correctInfo').html(finalResults.scoreTitle[2].title)
-                     $('.picContainer').append(finalPics.scorePics[2].pic1);
-                     $('.picContainer').append(finalPics.scorePics[2].pic2);
-                     $('.picContainer').append(finalPics.scorePics[2].pic3);
-                     $('.answerInfo').append(finalResults.scoreTitle[2].info);
+        else if (STORE.answeredCorrectly === 3){
+              $('.correctInfo').html(finalResults.scoreTitle[2].title)
+              $('.picContainer').append(finalPics.scorePics[2].pic1);
+              $('.picContainer').append(finalPics.scorePics[2].pic2);
+              $('.picContainer').append(finalPics.scorePics[2].pic3);
+              $('.answerInfo').append(finalResults.scoreTitle[2].info);
                      }
-                    else if (STORE.answeredCorrectly === 2){
-                            $('.correctInfo').html(finalResults.scoreTitle[3].title)
-                            $('.picContainer').append(finalPics.scorePics[3].pic1);
-                            $('.picContainer').append(finalPics.scorePics[3].pic2);
-                            $('.picContainer').append(finalPics.scorePics[3].pic3);
-                            $('.answerInfo').append(finalResults.scoreTitle[3].info);
+       else if (STORE.answeredCorrectly === 2){
+              $('.correctInfo').html(finalResults.scoreTitle[3].title)
+              $('.picContainer').append(finalPics.scorePics[3].pic1);
+              $('.picContainer').append(finalPics.scorePics[3].pic2);
+              $('.picContainer').append(finalPics.scorePics[3].pic3);
+              $('.answerInfo').append(finalResults.scoreTitle[3].info);
                             }
-                            else if (STORE.answeredCorrectly === 1){
-                                   $('.correctInfo').html(finalResults.scoreTitle[4].title)
-                                   $('.picContainer').append(finalPics.scorePics[4].pic1);
-                                   $('.picContainer').append(finalPics.scorePics[4].pic2);
-                                   $('.picContainer').append(finalPics.scorePics[4].pic3);
-                                   $('.answerInfo').append(finalResults.scoreTitle[4].info);
-                                   }
-                                   else {
-                                          $('.correctInfo').html(finalResults.scoreTitle[5].title)
-                                          $('.picContainer').append(finalPics.scorePics[5].pic1);
-                                          $('.picContainer').append(finalPics.scorePics[5].pic2);
-                                          $('.picContainer').append(finalPics.scorePics[5].pic3);
-                                          $('.answerInfo').append(finalResults.scoreTitle[5].info);
+       else if (STORE.answeredCorrectly === 1){
+              $('.correctInfo').html(finalResults.scoreTitle[4].title)
+              $('.picContainer').append(finalPics.scorePics[4].pic1);
+              $('.picContainer').append(finalPics.scorePics[4].pic2);
+              $('.picContainer').append(finalPics.scorePics[4].pic3);
+              $('.answerInfo').append(finalResults.scoreTitle[4].info);
+                            }
+       else {
+              $('.correctInfo').html(finalResults.scoreTitle[5].title)
+              $('.picContainer').append(finalPics.scorePics[5].pic1);
+              $('.picContainer').append(finalPics.scorePics[5].pic2);
+              $('.picContainer').append(finalPics.scorePics[5].pic3);
+              $('.answerInfo').append(finalResults.scoreTitle[5].info);
                                           }
                      
 
