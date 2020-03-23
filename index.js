@@ -231,105 +231,112 @@ const answerPics = {
                              ]
 }
 
-const finalResults = [
-              {
-                     score: 5,
-                     title: "You're Batting .1000!!!!",
-                     info: `Way to go!!! You answered correct on all 5 of the toughest
-                            sports questions out there. You definitely know your way around
-                            the football field and the baseball diamond. When it comes to sports
-                            trivia - you my friend are a Hall Of Famer!!!`
-              },
-              {
-                     score: 4,
-                     title: "You're an All-Star!!",
-                     info: `Wow, 4 out of 5!! No wonder why everyone in the league wants you. 
-                     My phone has been ringing off the hook trying to get me to trade you. But
-                     with numbers like yours, there's no way I can let go of a talent like you.
-                     You hear that???.... You know what that is? Thats endorsement deals, tv 
-                     commercials, shoe deals, you name it - all coming your way. You just this up
-                     and dont get complacent and keep raising your game.... pretty soon you'll be 
-                     in a gold jacket!!!`
-              },
-              {
-                     score: 3,
-                     title: "Hey, Even the Greats Need Role-Players...",
-                     info: `Look, not everyone can be Micheal Jordan or Derek Jeter. Some
-                     people are just B.J. Armstrong or Chuck Knoblauch. And with a 3 out of 5
-                     you've proven that you belong on the team and deserve a spot - you're just 
-                     probably not the person we want to give the ball to with the game on the line.
-                     In any event, you can work hard to seperate yourself from the pack and raise 
-                     your game and prove me wrong... or you can settle for being A.C Green instead of 
-                     Magic Johnson...even the greats need role-players. `
-              },
-              {
-                     score: 2,
-                     title: "Could Use Some More Work in the Cage",
-                     info: `2 out 5, not the best but good enough that we know you got some talent.
-                     My advice? Go hit the weight room, stop by the film room a few times a week and 
-                     do some more work in the cage. It's a long season, so theres plenty of time to
-                     turn it around, but i'd get on it now - you don't a bad outing to turn into a 
-                     slump....thats how you find a pink slip in your locker.`
-              },
-              {
-                     score: 1,
-                     title: "Gotta turn it around, Kid",
-                     info: `Look Kid, we like you and you got great hustle, but 1 out of 5
-                     is not gonna keep you on this team much longer. Take a few deep breaths,
-                     and maybe get with the assistant coach to go over your mechanics. When you do, 
-                     why don't ya' come back and give it another go. `
-              },
-              {
-                     score: 0,
-                     title: "Pink Slip",
-                     info: `Sports is a buisness kid. And as much as we'd like to keep you on
-                     the team, we have enough 'club house' guys - what we need is someone that can produce
-                     and put numbers up. 0 out of 5 is not gonna get it done - we need to open up this 
-                     roster spot to someone who can help us. Go home, work on your game and if you can
-                     improve your performance in the future - we'll reach out. Until then..... 
-                     Clean out your locker.. `
-              }
+const finalResults = {
+                        scoreTitleIndex: 0,
+                        scoreTitle: [
+                                                  {
+                                                        score: 5,
+                                                        title: "You're Batting .1000!!!!",
+                                                        info: `Way to go!!! You answered correct on all 5 of the toughest
+                                                        sports questions out there. You definitely know your way around
+                                                        the football field and the baseball diamond. When it comes to sports
+                                                        trivia - you my friend are a Hall Of Famer!!!`
+                                                  },
+                                                  {
+                                                        score: 4,
+                                                        title: "You're an All-Star!!",
+                                                        info: `Wow, 4 out of 5!! No wonder why everyone in the league wants you. 
+                                                        My phone has been ringing off the hook trying to get me to trade you. But
+                                                        with numbers like yours, there's no way I can let go of a talent like you.
+                                                        You hear that???.... You know what that is? Thats endorsement deals, tv 
+                                                        commercials, shoe deals, you name it - all coming your way. You just this up
+                                                        and dont get complacent and keep raising your game.... pretty soon you'll be 
+                                                        in a gold jacket!!!`
+                                                   },
+                                                   {
+                                                         score: 3,
+                                                         title: "Hey, Even the Greats Need Role-Players...",
+                                                         info: `Look, not everyone can be Micheal Jordan or Derek Jeter. Some
+                                                         people are just B.J. Armstrong or Chuck Knoblauch. And with a 3 out of 5
+                                                         you've proven that you belong on the team and deserve a spot - you're just 
+                                                         probably not the person we want to give the ball to with the game on the line.
+                                                         In any event, you can work hard to seperate yourself from the pack and raise 
+                                                         your game and prove me wrong... or you can settle for being A.C Green instead of 
+                                                         Magic Johnson...even the greats need role-players. `
+                                                   },
+                                                   {
+                                                         score: 2,
+                                                         title: "Could Use Some More Work in the Cage",
+                                                         info: `2 out 5, not the best but good enough that we know you got some talent.
+                                                         My advice? Go hit the weight room, stop by the film room a few times a week and 
+                                                         do some more work in the cage. It's a long season, so theres plenty of time to
+                                                         turn it around, but i'd get on it now - you don't a bad outing to turn into a 
+                                                         slump....thats how you find a pink slip in your locker.`
+                                                    },
+                                                    {
+                                                        score: 1,
+                                                        title: "Gotta turn it around, Kid",
+                                                        info: `Look Kid, we like you and you got great hustle, but 1 out of 5
+                                                        is not gonna keep you on this team much longer. Take a few deep breaths,
+                                                        and maybe get with the assistant coach to go over your mechanics. When you do, 
+                                                        why don't ya' come back and give it another go. `
+                                                     },
+                                                     {
+                                                        score: 0,
+                                                        title: "Pink Slip",
+                                                        info: `Sports is a buisness kid. And as much as we'd like to keep you on
+                                                        the team, we have enough 'club house' guys - what we need is someone that can produce
+                                                        and put numbers up. 0 out of 5 is not gonna get it done - we need to open up this 
+                                                        roster spot to someone who can help us. Go home, work on your game and if you can
+                                                        improve your performance in the future - we'll reach out. Until then..... 
+                                                        Clean out your locker.. `
+                                                      }
 
-]
+                     ]
+}
 
-const finalPics = [
-       {
-       score: 5,
-       pic1:`<img class="resultPic" src="http://www.profootballhof.com/assets/1/19/Brooks-Derrick-GJ-Lead.jpg?45270" alt="HOF jacket ceremony"></img> `,
-       pic2: `<img class="resultPic" src="http://sportschump.net/wp-content/uploads/2013/05/chad-ochocinco-hof-jacket.jpg" alt="Future Hall of Famer">`,
-       pic3: `<img class="resultPic" src="https://s3.amazonaws.com/s3.wpgcfm.radio.com/styles/delta__775x515/s3/ray_lewis.jpg?itok=nlwdkaFX&c=96740be446a2477a37ca698c9e290440" alt="Ray Lewis HOF">`
-       },
-       {
-       score: 4,
-       pic1: `https://tse3.mm.bing.net/th?id=OIP.BoeQzMdzwL6Yn4XwbLW-zAHaE8&pid=Api&P=0&w=284&h=190`,
-       pic2: `https://i.ytimg.com/vi/wBCw82QKU1g/maxresdefault.jpg`,
-       pic3: `http://www1.pictures.zimbio.com/gi/2019+Honda+NHL+All+Star+Game+PfxyMlFUBP0x.jpg` 
-       },
-       {
-       score: 3,
-       pic1: `https://www.basketusa.com/wp-content/uploads/2013/09/BJ.jpg` ,
-       pic2: `http://www.bestsportsphotos.com/sc_images/products/t_47638.jpg` ,
-       pic3: `https://i.ytimg.com/vi/9OSuzLAZjZQ/maxresdefault.jpg`
-       },
-       {
-       score: 2,
-       pic1: `http://www.saturdaydownsouth.com/wp-content/uploads/2015/03/MG_2345.jpg` ,
-       pic2: `http://static5.businessinsider.com/image/51fa6e926bb3f7933d000008-1200/the-film-room.jpg` ,
-       pic3: `https://patch.com/img/cdn/users/207354/2011/11/raw/fdcdaad88c3c9dde64b7a6e4b0c27acd.jpg?width=705` 
-       },
-       {
-       score : 1,
-       pic1: `http://media.masslive.com/sports_impact/photo/10091180-large.jpg` ,
-       pic2: `http://media.gettyimages.com/photos/soccer-player-sitting-on-bench-picture-id157718601` ,
-       pic3: `http://4.bp.blogspot.com/-In8EZkmSDgs/TfutRDQmEeI/AAAAAAAAAKM/184dEiKZXE8/s1600/sad%2Bfootball%2Bplayer.JPG`
-       },
-       {
-       score : 0,
-       pic1: `https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1217631.jpg`,
-       pic2: `http://www.it-career-coach.net/wp-content/uploads/2009/01/pinkslip.jpg`,
-       pic3: `https://www.incimages.com/uploaded_files/image/970x450/getty_618526794_345052.jpg`
-       },
-]
+const finalPics = {
+                     scorePicsIndex: 0,
+                     scorePics: [
+                                           {
+                                                  score: 5,
+                                                  pic1:`<img class="resultPic" src="http://www.profootballhof.com/assets/1/19/Brooks-Derrick-GJ-Lead.jpg?45270" alt="HOF jacket ceremony"></img> `,
+                                                  pic2: `<img class="resultPic" src="http://sportschump.net/wp-content/uploads/2013/05/chad-ochocinco-hof-jacket.jpg" alt="Future Hall of Famer">`,
+                                                  pic3: `<img class="resultPic" src="https://s3.amazonaws.com/s3.wpgcfm.radio.com/styles/delta__775x515/s3/ray_lewis.jpg?itok=nlwdkaFX&c=96740be446a2477a37ca698c9e290440" alt="Ray Lewis HOF">`
+                                           },
+                                           {
+                                                  score: 4,
+                                                  pic1: `<img class="resultPic" src="https://tse3.mm.bing.net/th?id=OIP.BoeQzMdzwL6Yn4XwbLW-zAHaE8&pid=Api&P=0&w=284&h=190">`,
+                                                  pic2: `<img class="resultPic" src="https://i.ytimg.com/vi/wBCw82QKU1g/maxresdefault.jpg">`,
+                                                  pic3: `<img class="resultPic" src="http://www1.pictures.zimbio.com/gi/2019+Honda+NHL+All+Star+Game+PfxyMlFUBP0x.jpg">` 
+                                           },
+                                           {
+                                                 score: 3,
+                                                 pic1: `<img class="resultPic" src="https://www.basketusa.com/wp-content/uploads/2013/09/BJ.jpg">`,
+                                                 pic2: `<img class="resultPic" src="http://www.bestsportsphotos.com/sc_images/products/t_47638.jpg">` ,
+                                                 pic3: `<img class="resultPic" src="https://i.ytimg.com/vi/9OSuzLAZjZQ/maxresdefault.jpg">`
+                                           },
+                                           {
+                                                 score: 2,
+                                                 pic1: `<img class="resultPic" src="http://www.saturdaydownsouth.com/wp-content/uploads/2015/03/MG_2345.jpg">` ,
+                                                 pic2: `<img class="resultPic" src="http://static5.businessinsider.com/image/51fa6e926bb3f7933d000008-1200/the-film-room.jpg">` ,
+                                                 pic3: `<img class="resultPic" src="https://patch.com/img/cdn/users/207354/2011/11/raw/fdcdaad88c3c9dde64b7a6e4b0c27acd.jpg?width=705">` 
+                                           },
+                                           {
+                                                 score : 1,
+                                                 pic1: `<img class="resultPic" src="http://media.masslive.com/sports_impact/photo/10091180-large.jpg">` ,
+                                                 pic2: `<img class="resultPic" src="http://media.gettyimages.com/photos/soccer-player-sitting-on-bench-picture-id157718601">` ,
+                                                 pic3: `<img class="resultPic" src="http://4.bp.blogspot.com/-In8EZkmSDgs/TfutRDQmEeI/AAAAAAAAAKM/184dEiKZXE8/s1600/sad%2Bfootball%2Bplayer.JPG">`
+                                           },
+                                           {
+                                                 score : 0,
+                                                 pic1: `<img class="resultPic" src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1217631.jpg">`,
+                                                 pic2: `<img class="resultPic" src="http://www.it-career-coach.net/wp-content/uploads/2009/01/pinkslip.jpg">`,
+                                                 pic3: `<img class="resultPic" src="https://www.incimages.com/uploaded_files/image/970x450/getty_618526794_345052.jpg">`
+                                           },
+                                           ]
+                     }
+
 
 let i = 0;
 
@@ -344,6 +351,7 @@ function startQuiz(){
        questCount();
        showAnswer();
        nextQuestion();
+       displayFinalScore();
     });
 }
  
@@ -377,7 +385,7 @@ function buildAnswerBubble(){
        </p>
        <button class="nextQuestion" type="submit">Next Question</button>
        <button class="getResults" type="submit">Get Results</button>
-       </form>
+       <button class="restartQuiz" type="submit">Reattempt Quiz</button>
        </div>`)
        $('.answerBubble').hide();
 
@@ -410,9 +418,12 @@ function handleClicks(){
        $(".questionBubble").hide();
        $(".answerKey").hide();
        $('.getResults').hide();
+       $('.restartQuiz').hide();
        $(".answerBubble").show();
-       
-});
+       if (STORE.currentQuestion === 5){
+              $('.nextQuestion').hide();
+              $('.getResults').show();      
+}});
 }
 
 function showAnswer(){
@@ -421,13 +432,11 @@ function showAnswer(){
        $('.greenCheck').show();
        $('.redX').hide(); 
        STORE.answeredCorrectly++
-
        }); 
        $('.wrong').on('click',function(){
        $('.correctInfo').text(answerTitle[1])
        $('.redX').show();
        $('.greenCheck').hide(); 
-       // STORE.currentQuestion++
        });
        $('.picContainer').append(answerPics.teamPicSet[answerPics.currentPicSet].pic1);
        $('.picContainer').append(answerPics.teamPicSet[answerPics.currentPicSet].pic2);
@@ -457,6 +466,67 @@ function nextQuestion(){
        });
 }
 
+function displayFinalScore(){
+       $('.getResults').on('click', function(){
+       $('.redX').hide();
+       $('.greenCheck').hide();
+       $('.picContainer').empty();
+       $('.answerInfo').empty();
+       $('.getResults').hide();
+       $('.restartQuiz').show();
+       restartQuiz();
+       if (STORE.answeredCorrectly === 5){
+       $('.correctInfo').html(finalResults.scoreTitle[0].title)
+       $('.picContainer').append(finalPics.scorePics[0].pic1);
+       $('.picContainer').append(finalPics.scorePics[0].pic2);
+       $('.picContainer').append(finalPics.scorePics[0].pic3);
+       $('.answerInfo').append(finalResults.scoreTitle[0].info);
+       }
+       else if (STORE.answeredCorrectly === 4){
+              $('.correctInfo').html(finalResults.scoreTitle[1].title)
+              $('.picContainer').append(finalPics.scorePics[1].pic1);
+              $('.picContainer').append(finalPics.scorePics[1].pic2);
+              $('.picContainer').append(finalPics.scorePics[1].pic3);
+              $('.answerInfo').append(finalResults.scoreTitle[1].info);
+              }
+              else if (STORE.answeredCorrectly === 3){
+                     $('.correctInfo').html(finalResults.scoreTitle[2].title)
+                     $('.picContainer').append(finalPics.scorePics[2].pic1);
+                     $('.picContainer').append(finalPics.scorePics[2].pic2);
+                     $('.picContainer').append(finalPics.scorePics[2].pic3);
+                     $('.answerInfo').append(finalResults.scoreTitle[2].info);
+                     }
+                    else if (STORE.answeredCorrectly === 2){
+                            $('.correctInfo').html(finalResults.scoreTitle[3].title)
+                            $('.picContainer').append(finalPics.scorePics[3].pic1);
+                            $('.picContainer').append(finalPics.scorePics[3].pic2);
+                            $('.picContainer').append(finalPics.scorePics[3].pic3);
+                            $('.answerInfo').append(finalResults.scoreTitle[3].info);
+                            }
+                            else if (STORE.answeredCorrectly === 1){
+                                   $('.correctInfo').html(finalResults.scoreTitle[4].title)
+                                   $('.picContainer').append(finalPics.scorePics[4].pic1);
+                                   $('.picContainer').append(finalPics.scorePics[4].pic2);
+                                   $('.picContainer').append(finalPics.scorePics[4].pic3);
+                                   $('.answerInfo').append(finalResults.scoreTitle[4].info);
+                                   }
+                                   else {
+                                          $('.correctInfo').html(finalResults.scoreTitle[5].title)
+                                          $('.picContainer').append(finalPics.scorePics[5].pic1);
+                                          $('.picContainer').append(finalPics.scorePics[5].pic2);
+                                          $('.picContainer').append(finalPics.scorePics[5].pic3);
+                                          $('.answerInfo').append(finalResults.scoreTitle[5].info);
+                                          }
+                     
+
+       });
+}
+
+function restartQuiz(){
+       $('.restartQuiz').on('click',function(){ 
+              location.reload(true);    
+       });
+}
 
 function handleQuizApp(){
     startQuiz();

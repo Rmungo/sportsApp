@@ -165,12 +165,13 @@ left: 3px;
     bottom: 30px;
 } 
 
-.nextQuestion{
+.nextQuestion, .getResults,.restartQuiz {
     height: 30px;
     background-color: green;
     color: white;
     border-radius: 25px;
 }
+
 
 .redX {
         height: 40px;
