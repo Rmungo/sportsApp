@@ -1,10 +1,15 @@
+"use strict";
 
 // question and answer database
-const STORE = 
-[
+const STORE = {
+       currentQuestionIndex: 0,
+       answeredCorrectly: 0,
+       currentQuestion : 1,
+       questions: 
+                     [
                      {
-                    question: 'Question 1: Which of the following franchises has won the most games all-time?',
-                    answers: [ 
+                     question: 'Question 1: Which of the following franchises has won the most games all-time?',
+                     answers: [ 
                                     `<li class="option">The New York Yankees
                                         <input type= "image" class="wrong teamLogo" id ="yanks" alt="NY Yankees" src ="http://www.stickpng.com/assets/images/584d4b740a44bd1070d5d494.png"></li>`,
                                     `<li class="option">The Los Angeles Lakers
@@ -20,11 +25,11 @@ const STORE =
                                     `<li class="option">The New England Patriots
                                         <input type='image' class="wrong teamLogo" id ="pats" alt="New England Patroits" src ="http://assets.stickpng.com/thumbs/580b585b2edbce24c47b2b3b.png"></li>  `
                             ],
-                    correctAnswer: 'San Francisco Giants'
+                     correctAnswer: 'San Francisco Giants'
                       },
                       {
-                    question: 'Question 2: Which of the following is the oldest team in Pro Football History?',
-                    answers: [
+                     question: 'Question 2: Which of the following is the oldest team in Pro Football History?',
+                     answers: [
                                   ` <li class="option">The Green Bay Packers
                                          <input type='image' class="wrong teamLogo" id ="Pack" alt="Packers" src ="http://www.stickpng.com/assets/images/580b585b2edbce24c47b2b25.png"></li>`,
                                   ` <li class="option">The New York Giants
@@ -87,13 +92,13 @@ const STORE =
                     question: 'Question 5: Which of the following MLB teams, has posted the lowest home attendance for a game in the history of baseball?',
                     answers: [
                                   `<li class="option">The Florida Marlins
-                                         <input type="image" class="right teamLogo" id ="flr" alt="Marlins" src ="https://sulimanalomran.com/images/marlin-fish-clipart-19.png"></li>`,
+                                         <input type="image" class="wrong teamLogo" id ="flr" alt="Marlins" src ="https://sulimanalomran.com/images/marlin-fish-clipart-19.png"></li>`,
                                   `<li class="option">The Montreal Expos 
                                          <input type="image" class="wrong teamLogo" id ="exp" alt="Expos" src ="https://i.pinimg.com/originals/89/82/03/89820315b883420a01b8462f8f45a20e.png"></li>`,
                                   `<li class="option">The Toronto Blue Jays
                                          <input type="image" class="wrong teamLogo" id ="jays" alt="Blue Jays" src="http://logos-download.com/wp-content/uploads/2016/04/Toronto_Blue_Jays_logo_logotype_emblem.png"></li>`,
                                   `<li class="option">The Oakland A's
-                                         <input type="image" class="wrong teamLogo" id ="oak" alt="Athletics" src="http://logos-download.com/wp-content/uploads/2016/04/Oakland_Athletics_logo_logotype.png"></li>`,
+                                         <input type="image" class="right teamLogo" id ="oak" alt="Athletics" src="http://logos-download.com/wp-content/uploads/2016/04/Oakland_Athletics_logo_logotype.png"></li>`,
                                   `<li class="option">The Baltimore Orioles
                                          <input type="image" class="wrong teamLogo" id ="bal" alt="Orioles" src ="https://logos-download.com/wp-content/uploads/2016/04/Baltimore_Orioles_logo_emblem_transparent.png"></li>`,
                                   `<li class="option">The Detroit Tigers
@@ -105,11 +110,16 @@ const STORE =
 
                       }
 
-];
+]
+};
 
 const answerTitle = ["Nothin' but Net!!!", "Swing and a Miss"];
 
-const answerInfo = [
+const answerInfo = {
+
+                     answerTextIndex: 0,
+                     answerText:  
+                               [
        
        { 
          question: 1,
@@ -173,49 +183,53 @@ const answerInfo = [
             to Oakland. Even currently, the A's struggle to draw fans and are in talks of
           getting a new stadium either inside of Oakland or relocating for the third time
           in 65 years.`
-       }, 
+       } 
        ]
+}
 
-const answerPics = [
-       {
-               team: 'SF giants',
-               pic1: '<img class="answerPic picOne" src="https://tse4.mm.bing.net/th?id=OIP.vdWaRRPcjYox4uIC5z9v0QHaJ5&pid=Api&P=0&w=300&h=300"alt="Monte Irvin: Giants First Black Player">',
-               pic2: '<img class="answerPic picTwo" src="https://tse3.mm.bing.net/th?id=OIP.MivcL5RA1OluKZuOC86ulgHaEn&pid=Api&P=0&w=303&h=190" alt="Matt Williams: The Marine">',
-               pic3: '<img class="answerPic picThree"src="https://tse2.mm.bing.net/th?id=OIP.92keH2Enda0IVQaI6hYjQQHaE7&pid=Api&P=0&w=235&h=157" alt="Willie Mays: Maybe The Greatest Of All Time">',
-               pic4: '<img class="answerPic picFour" src="http://s3.amazonaws.com/darkroom-cdn/2014/10/royals-giants-world-series-violence073.jpg" alt="Giants First Title in San Francisco, 2010"> '
-       },
-       {
-              team: 'Arizona Cardinals ',
-              pic1: ' <img class="answerPic picOne" src="http://cdn.bleacherreport.net/images_root/slides/photos/001/014/297/cardsMorganAthleticClub_display_image.jpg?1308023951"',
-              pic2: '<img class="answerPic picTwo" src="http://www.cardinalsgab.com/wp-content/uploads/2009/12/Kurt-Warner.jpg">',
-              pic3: '<img class="answerPic picThree" src="https://sportsteamhistory.com/wp-content/uploads/2017/01/st.-louis-cardinals-football.jpg">',
-              pic4: '<img class="answerPic picFour" src="https://clutchpoints.com/wp-content/uploads/2018/10/Larry_Fitzgerald.jpg"> '
-       },
-       {
-              team: 'New York Knicks',
-              pic1: '<img class="answerPic picOne" src="https://tse1.mm.bing.net/th?id=OIP.9db8Xbn5xUrtVkeMmsm6sgHaF8&pid=Api&P=0&w=206&h=166"',
-              pic2: '<img class="answerPic picTwo" src="https://cdn.japantimes.2xx.jp/wp-content/uploads/2018/12/sp-ed-e-20181229-870x698.jpg">',
-              pic3: '<img class="answerPic picThree" src="https://tse3.mm.bing.net/th?id=OIP.NxF1sqx6vOao6HxpL2RS7AHaD4&pid=Api&P=0&w=304&h=160">',
-              pic4: '<img class="answerPic picFour"src="https://theundefeated.com/wp-content/uploads/2019/11/AP_080910048828-e1574881859339.jpg?w=700"> '
-       },
-       {
-              team: 'Detroit Red Wings',
-              pic1: '<img class="answerPic picOne" src="http://www4.pictures.gi.zimbio.com/Dallas+Stars+v+Detroit+Red+Wings+Game+dlltkirDBYkx.jpg"',
-              pic2: '<img class="answerPic picTwo" src="https://tse4.mm.bing.net/th?id=OIP.O-YQ685EObihAOil9ZMV3gAAAA&pid=Api&P=0&w=300&h=300">',
-              pic3: '<img class="answerPic picThree" src="https://media.gettyimages.com/photos/center-kris-draper-of-the-detroit-red-wings-shoots-against-the-the-picture-id56442151">',
-              pic4: '<img class="answerPic picFour"src="https://i.pinimg.com/originals/ec/89/97/ec899753e3efcc2fdff0c71b3555dafb.jpg"> '
+const answerPics = {
+       currentPicSet: 0,
+       teamPicSet : [
+                       {
+                             team: 'SF giants',
+                             pic1: '<img class="answerPic picOne" src="https://tse4.mm.bing.net/th?id=OIP.vdWaRRPcjYox4uIC5z9v0QHaJ5&pid=Api&P=0&w=300&h=300"alt="Monte Irvin: Giants First Black Player">',
+                             pic2: '<img class="answerPic picTwo" src="https://tse3.mm.bing.net/th?id=OIP.MivcL5RA1OluKZuOC86ulgHaEn&pid=Api&P=0&w=303&h=190" alt="Matt Williams: The Marine">',
+                             pic3: '<img class="answerPic picThree"src="https://tse2.mm.bing.net/th?id=OIP.92keH2Enda0IVQaI6hYjQQHaE7&pid=Api&P=0&w=235&h=157" alt="Willie Mays: Maybe The Greatest Of All Time">',
+                             pic4: '<img class="answerPic picFour" src="http://s3.amazonaws.com/darkroom-cdn/2014/10/royals-giants-world-series-violence073.jpg" alt="Giants First Title in San Francisco, 2010"> '
+                        },
+                        {
+                             team: 'Arizona Cardinals ',
+                             pic1: '<img class="answerPic picOne" src="http://cdn.bleacherreport.net/images_root/slides/photos/001/014/297/cardsMorganAthleticClub_display_image.jpg?1308023951"',
+                             pic2: '<img class="answerPic picTwo" src="http://www.cardinalsgab.com/wp-content/uploads/2009/12/Kurt-Warner.jpg">',
+                             pic3: '<img class="answerPic picThree" src="https://sportsteamhistory.com/wp-content/uploads/2017/01/st.-louis-cardinals-football.jpg">',
+                             pic4: '<img class="answerPic picFour" src="https://clutchpoints.com/wp-content/uploads/2018/10/Larry_Fitzgerald.jpg">'
+                         },
+                         {
+                             team: 'New York Knicks',
+                             pic1: '<img class="answerPic picOne" src="https://tse1.mm.bing.net/th?id=OIP.9db8Xbn5xUrtVkeMmsm6sgHaF8&pid=Api&P=0&w=206&h=166"',
+                             pic2: '<img class="answerPic picTwo" src="https://cdn.japantimes.2xx.jp/wp-content/uploads/2018/12/sp-ed-e-20181229-870x698.jpg">',
+                             pic3: '<img class="answerPic picThree" src="https://tse3.mm.bing.net/th?id=OIP.NxF1sqx6vOao6HxpL2RS7AHaD4&pid=Api&P=0&w=304&h=160">',
+                             pic4: '<img class="answerPic picFour"src="https://theundefeated.com/wp-content/uploads/2019/11/AP_080910048828-e1574881859339.jpg?w=700">'
+                          },
+                          {
+                             team: 'Detroit Red Wings',
+                             pic1: '<img class="answerPic picOne" src="http://www4.pictures.gi.zimbio.com/Dallas+Stars+v+Detroit+Red+Wings+Game+dlltkirDBYkx.jpg"',
+                             pic2: '<img class="answerPic picTwo" src="https://tse4.mm.bing.net/th?id=OIP.O-YQ685EObihAOil9ZMV3gAAAA&pid=Api&P=0&w=300&h=300">',
+                             pic3: '<img class="answerPic picThree" src="https://media.gettyimages.com/photos/center-kris-draper-of-the-detroit-red-wings-shoots-against-the-the-picture-id56442151">',
+                             pic4: '<img class="answerPic picFour"src="https://i.pinimg.com/originals/ec/89/97/ec899753e3efcc2fdff0c71b3555dafb.jpg"> '
               
-       },
-       {
-              team: 'Oakland Athletics ',
-              pic1: '<img class="answerPic picOne" src="https://sfbay.ca/home/wp-content/uploads/2016/09/160925_Rangers_Athletics1077_bay114.jpg"',
-              pic2: '<img class="answerPic picTwo" src="http://sfbay.ca/home/wp-content/uploads/2012/10/2012-08-02-20.31.39-1000x563.jpg">',
-              pic3: '<img class="answerPic picThree" src="http://assets.sbnation.com/assets/1050595/oakland_as_fan_attendance_coliseum.jpg">',
-              pic4: '<img class="answerPic picFour"src="http://ww3.hdnux.com/photos/07/00/05/1835342/19/628x471.jpg"> '
+                           },
+                           {
+                             team: 'Oakland Athletics ',
+                             pic1: '<img class="answerPic picOne" src="https://sfbay.ca/home/wp-content/uploads/2016/09/160925_Rangers_Athletics1077_bay114.jpg"',
+                             pic2: '<img class="answerPic picTwo" src="http://sfbay.ca/home/wp-content/uploads/2012/10/2012-08-02-20.31.39-1000x563.jpg">',
+                             pic3: '<img class="answerPic picThree" src="http://assets.sbnation.com/assets/1050595/oakland_as_fan_attendance_coliseum.jpg">',
+                             pic4: '<img class="answerPic picFour"src="http://ww3.hdnux.com/photos/07/00/05/1835342/19/628x471.jpg"> '
               
-       }
+                             }
 
-]
+                             ]
+}
 
 const finalResults = [
               {
@@ -317,32 +331,38 @@ const finalPics = [
        },
 ]
 
-
 let i = 0;
-let score = 0;
-let questionNumber = 0;
 
-// START QUIZ --- Function that when we click on the startquiz app, the
-// div containing the welcome text and start button are hidden
-// also displaying the question bubbles and counter bubbles and answer key 
-//  that will display text inside
 function startQuiz(){
-    $('.start').on('click', function(){
-        $('.welcome').hide();
-        buildBody();
-        renderQuestion();
-        displayCounters();
-        displayOptions();
-        buildAnswerBubble();
-    })
-};
-
-// BUILD BODY --- Function that adds four divs to the body that will be the building blocks
-// for the presentation of the app visually. 
+       $('.start').on('click', function(){
+       $('.welcome').hide();
+       buildBody();
+       renderQuestion();
+       buildAnswerBubble();
+       displayScore();
+       displayOptions();
+       questCount();
+       showAnswer();
+       nextQuestion();
+    });
+}
+ 
 function buildBody(){
-    $('body').html('<div class ="legend"></div><div class="answerBubble" id="correctAnswer"></div><div class = "questionBubble"></div><form  class ="answerKey"></form>');
+    $('body').html(`
+    <div class = 'legend2'></div>
+    <div class ="legend"></div>
+    <div class="answerBubble" id="correctAnswer"></div>
+    <div class = "questionBubble"></div>
+    <form class ="answerKey"></form>`);
     
 }
+
+function renderQuestion(){
+       let quizQuestion = STORE.questions[STORE.currentQuestionIndex].question;     
+       $('.questionBubble').html(`<p class="question">${quizQuestion}</p>`);
+       }
+
+
 
 function buildAnswerBubble(){
        $('.answerBubble').html(`<div class ="checkAndTitle">
@@ -351,106 +371,95 @@ function buildAnswerBubble(){
        <p class= "correctInfo" id="correct"> </p> 
        </div>
        <div class="picContainer">
-              <div class pic22> </div>
        </div>
        <div class="extraInfo">
        <p class= "answerInfo">
-</p>
+       </p>
        <button class="nextQuestion" type="submit">Next Question</button>
        <button class="getResults" type="submit">Get Results</button>
-   </form>
-   </div>`)
-   $('.answerBubble').hide();
+       </form>
+       </div>`)
+       $('.answerBubble').hide();
+
 }
 
-// RENDER QUESTIONS --- Function will display the question to the user 
-function renderQuestion(){
-    let quizQuestion = STORE[i].question;
-    $('.questionBubble').html(`<p class="question">${quizQuestion}</p>`);
-}
+function displayScore(){
+       $('.legend').html(`<div class = "counter" id="correctCounter"> 
+       <p class="correctText">Answered Correct: ${STORE.answeredCorrectly} of 5 </p></div>`);
+  };
 
-// DISPLAY COUNTERS --- Function will display both counters initailly when quiz starts 
-function displayCounters(){
-    let answeredCorrectly = 0;
-    let currentQuestion = 1;
-     $('.legend').html(`<div class = "counter" id="correctCounter"> <p class="correctText">Answered Correct: ${answeredCorrectly} of 5 </p></div><div class = "counter"> <p class="questionCounter">Question ${currentQuestion} out of 5</p></div>`);
-     
-};
+function questCount(){
+       $('.legend2').html(` <div class = "counter"> <p class="questionCounter">
+       Question ${STORE.currentQuestion} out of 5</p></div>`);
+  }
 
 function displayOptions(){
-    let teamAnswers = STORE[0].answers
+    let teamAnswers = STORE.questions[STORE.currentQuestionIndex].answers
     $('.answerKey').html("<div class = 'answers'><ul class ='teams'></ul></div>")
-     $('.teams').html(`${teamAnswers}`)
-     handleWrongClicks();
-     handleRightClicks();
-     
+    $('.teams').html(`${teamAnswers}`)
+    handleClicks();
 }
 
-function handleWrongClicks(){
-       $('.wrong').on('click',function(event){
+
+
+function handleClicks(){
+       $('.option').on('click',function(event){
        event.preventDefault();
        $(".legend").hide();
+       $(".legend2").hide();
        $(".questionBubble").hide();
        $(".answerKey").hide();
-       $('.greenCheck').hide();
        $('.getResults').hide();
        $(".answerBubble").show();
-       showWrongDisplay();
-       })
+       
+});
 }
 
-function showWrongDisplay(event){
-       $('.correctInfo').text(answerTitle[1]);
-       $('.picContainer').append(answerPics[i].pic1)
-       $('.picContainer').append(answerPics[i].pic2);
-       $('.picContainer').append(answerPics[i].pic3)
-       $('.picContainer').append(answerPics[i].pic4)
-       $('.answerInfo').append(answerInfo[i].info)
-       nextQuestion();
+function showAnswer(){
+       $('.right').on('click',function(){
+       $('.correctInfo').text(answerTitle[0]);
+       $('.greenCheck').show();
+       $('.redX').hide(); 
+       STORE.answeredCorrectly++
 
-
-}
-
-function handleRightClicks(){
-       $('.right').on('click',function(event){
-              event.preventDefault();
-              $(".legend").hide();
-              $(".questionBubble").hide();
-              $(".answerKey").hide();
-              $('.redX').hide();
-              $('.getResults').hide();
-              $(".answerBubble").show();
-              showRightDisplay();
-       })
-
-};
-
-function showRightDisplay(){
-              $('.correctInfo').text(answerTitle[0]);
-              $('.picContainer').append(answerPics[i].pic1);
-              $('.picContainer').append(answerPics[i].pic2);
-              $('.picContainer').append(answerPics[i].pic3);
-              $('.picContainer').append(answerPics[i].pic4);
-              $('.answerInfo').append(answerInfo[i].info);
-              nextQuestion();
-     
+       }); 
+       $('.wrong').on('click',function(){
+       $('.correctInfo').text(answerTitle[1])
+       $('.redX').show();
+       $('.greenCheck').hide(); 
+       // STORE.currentQuestion++
+       });
+       $('.picContainer').append(answerPics.teamPicSet[answerPics.currentPicSet].pic1);
+       $('.picContainer').append(answerPics.teamPicSet[answerPics.currentPicSet].pic2);
+       $('.picContainer').append(answerPics.teamPicSet[answerPics.currentPicSet].pic3);
+       $('.picContainer').append(answerPics.teamPicSet[answerPics.currentPicSet].pic4);
+       $('.answerInfo').append(answerInfo.answerText[answerInfo.answerTextIndex].info);
+       displayScore();
+       questCount();
 }
 
 function nextQuestion(){
-       $('.nextQuestion').on('click', function(event){
-              $(".legend").show();
-              $(".questionBubble").show();
-              $(".answerKey").show();
-              $(".answerBubble").hide();    
-       })
-
+       $('.nextQuestion').on('click',function(){
+       STORE.currentQuestionIndex++;
+       STORE.currentQuestion++;
+       answerInfo.answerTextIndex++;
+       answerPics.currentPicSet++;
+       $(".legend").show();
+       $(".legend2").show();
+       $(".questionBubble").show()
+       $(".answerKey").show();
+       $(".answerBubble").hide();
+       $('.picContainer').empty();
+       $('.answerInfo').empty();
+       renderQuestion();
+       displayOptions();
+       showAnswer();
+       });
 }
 
 
 function handleQuizApp(){
     startQuiz();
-    
 }
-
-
-$(handleQuizApp);
+    
+$(handleQuizApp)
