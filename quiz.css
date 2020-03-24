@@ -41,19 +41,20 @@ body {
 
 .answers {
     height: 450px;
-    display: flex;
     align-items: flex-end;
     
 }
 
-.teams {
+.teams , .teams1 , .teams2 , .teams3 {
     color: black;
     display: flex;
     justify-content: space-around;
-    width: 100%;
     list-style: none;
     
 } 
+
+
+
 
  .option {
      height: 160px; 
@@ -211,31 +212,116 @@ left: 15px;
     padding-bottom: 20px;
 }
 
-@media screen and (max-width: 975px){
-    .teams {
-        flex-wrap: wrap;
+@media screen and (min-width: 800px){
+    .teams1 , .teams2 , .teams3 {
+        width: 300px;
     }
 
+    .option{
+        min-width: 140px;
+    }
+
+    .teams3 {
+        position: relative;
+        left: 875px;
+        bottom: 100px;
+    }
+
+    .teams2 {
+        position: relative;
+        left: 595px;
+        top: 75px;
+    }
+
+    .teams1{
+        position: relative;
+        left: 175px;
+        top: 250px;
+    }
 }
 
-@media screen and (max-width: 730px){
-    .option {
-        width: 75px;
-        /* border:none; */
-        /* background-color: black;   */
-        /* color: white;  */
-        /* border: 2px solid white; */
+
+
+
+ @media screen and (max-width: 800px){
+    .teams1, .teams2, .teams3{
+        /* width: 340px; */
+        position: relative;
+        right: 10px;
+        top: 40px;
+        display: flex;       
+}
+
+
+.questionBubble{
+    width: 350px;
+}
+
+
+.correctText {
+    font-size: small;
+}
+
+#correctCounter {
+    width: 150px;
+    height: 30px;
+    top: 5px;
+}
+.counter {
+    width: 150px;
+    height:30px;
+}
+
+.welcome {
+    width: 250px;
+}
+} 
+/* 
+@media screen and (max-width:415px){
+    .teams1 {
+       position: relative;
+       left: 50px;
     }
-    .questionBubble{
-        /* background-color: black; */
-        /* color: white; */
-        /* border: 2px solid white; */
-        width: 450px;
+} */
+
+@media screen and (max-width: 383px){
+    .teams1, .teams2, .teams3{
+        /* width: 340px; */
+        position: relative;
+        right: 25px;
+        top: 40px;
+        
+    }
+    #chc {
+        position: relative;
+        left: 5px;
+        flex-grow: 3;
+    }
+
+    #yanks {
+        position: relative;
+        right: 5px;
+    }
+    
+    .correctText {
+        font-size: small;
+    }
+    
+    #correctCounter {
+        width: 150px;
+        height: 30px;
+        top: 5px;
     }
     .counter {
-        /* background-color: black; */
-        /* color: white; */
-        /* border: 2px solid white; */
+        width: 150px;
+        height:30px;
+          
+    }
+    .option {
+        width: 75px;
+    }
+    .questionBubble{
+        width: 450px;
     }
     .answerBubble , .welcome {
         width: 450px;
@@ -246,22 +332,13 @@ left: 15px;
     .questionBubble {
         width: 250px;
     }
-}
-
-@media screen and (max-width: 460px){
-    /* .answerBubble { */
-        /* width: 250px; */
-    /* }
-    .pic1,.pic2, .pic3 {
-        display: none; */
-    /* } */
-
     .welcome {
         width: 250px;
     }
 }
-
-@media screen and (max-width: 478px){
+     
+    
+/* @media screen and (max-width: 478px){
     .answerBubble {
         width: 250px;
     }
@@ -282,32 +359,4 @@ left: 15px;
     .lastPic {
         display: none;
 }
-
-@media screen and (max-width: 383px){
-    .correctText {
-        font-size: small;
-    }
-    #correctCounter {
-        width: 150px;
-        height: 30px;
-        top: 5px;
-    }
-    .counter {
-        width: 150px;
-        height:30px;
-          
-    }
-    .legend2 {
-        width: 50px;
-    }
-
-    .teams {
-        position: relative;
-        top: 100px;
-        right: 20px;
-    }
-
-    .option {
-        margin-bottom: 5px;
-    }
-}
+} */

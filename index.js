@@ -11,19 +11,19 @@ const STORE = {
                      question: 'Question 1: Which of the following franchises has won the most games all-time?',
                      answers: [ 
                                     `<li class="option">The New York Yankees
-                                        <input type= "image" class="wrong teamLogo" id ="yanks" alt="NY Yankees" src ="http://www.stickpng.com/assets/images/584d4b740a44bd1070d5d494.png"></li>`,
+                                        <input type= "image" class="wrong teamLogo indexOne" id ="yanks" alt="NY Yankees" src ="http://www.stickpng.com/assets/images/584d4b740a44bd1070d5d494.png"></li>`,
                                     `<li class="option">The Chicago Cubs
-                                        <input type='image'class="wrong teamLogo" id ="chc" alt="Cubbies" src ="http://www.stickpng.com/assets/images/584d41b10a44bd1070d5d411.png"></li>`,
+                                        <input type='image'class="wrong teamLogo indexTwo" id ="chc" alt="Cubbies" src ="http://www.stickpng.com/assets/images/584d41b10a44bd1070d5d411.png"></li>`,
                                     `<li class="option">The Dallas Cowboys
-                                        <input type='image' class="wrong teamLogo" id ="dal" alt="Dallas Cowboys" src="https://i.pinimg.com/originals/6e/01/97/6e0197b33d0ba5f2ef3d1503e9bc5b45.png"></li>`,
+                                        <input type='image' class="wrong teamLogo indexThree" id ="dal" alt="Dallas Cowboys" src="https://i.pinimg.com/originals/6e/01/97/6e0197b33d0ba5f2ef3d1503e9bc5b45.png"></li>`,
                                     `<li class="option">The San Francisco Giants
-                                        <input type='image' class="right teamLogo" id ="sfg" alt="SF Giants" src="http://i.imgur.com/Jve0IoB.png"></li>`,
+                                        <input type='image' class="right teamLogo indexFour" id ="sfg" alt="SF Giants" src="http://i.imgur.com/Jve0IoB.png"></li>`,
                                     `<li class="option">The Boston Celtics
-                                        <input type='image' class="wrong teamLogo" id ="celts" alt="Boston Celtics" src ="http://www.stickpng.com/assets/images/58419c6aa6515b1e0ad75a61.png"></li>`,
+                                        <input type='image' class="wrong teamLogo indexFive" id ="celts" alt="Boston Celtics" src ="http://www.stickpng.com/assets/images/58419c6aa6515b1e0ad75a61.png"></li>`,
                                     `<li class="option">The Los Angeles Dodgers
-                                        <input type='image' class="wrong teamLogo" id ="dodgers" alt="LA Dodgers" src ="http://clipart-library.com/image_gallery/12597.png"></li>`,
+                                        <input type='image' class="wrong teamLogo indexSix" id ="dodgers" alt="LA Dodgers" src ="http://clipart-library.com/image_gallery/12597.png"></li>`,
                                     `<li class="option">The New England Patriots
-                                        <input type='image' class="wrong teamLogo" id ="pats" alt="New England Patroits" src ="http://assets.stickpng.com/thumbs/580b585b2edbce24c47b2b3b.png"></li>  `
+                                        <input type='image' class="wrong teamLogo indexSeven" id ="pats" alt="New England Patroits" src ="http://assets.stickpng.com/thumbs/580b585b2edbce24c47b2b3b.png"></li>  `
                             ],
                      correctAnswer: 'San Francisco Giants'
                       },
@@ -352,6 +352,7 @@ function startQuiz(){
        showAnswer();
        nextQuestion();
        displayFinalScore();
+      
     });
 }
  
@@ -403,12 +404,28 @@ function questCount(){
 
 function displayOptions(){
     let teamAnswers = STORE.questions[STORE.currentQuestionIndex].answers
-    $('.answerKey').html("<div class = 'answers'><ul class ='teams'></ul></div>")
+    $('.answerKey').html("<div class = 'answers'><ul class ='teams'></ul><ul class ='teams1'></ul><ul class ='teams2'></ul><ul class ='teams3'></ul></div>")
     $('.teams').html(`${teamAnswers}`)
+    $('.teams1').append( `<li class="option">The New York Yankees
+    <input type= "image" class="wrong teamLogo indexOne" id ="yanks" alt="NY Yankees" src ="http://www.stickpng.com/assets/images/584d4b740a44bd1070d5d494.png"></li>`)
+    $('.teams1').append(`<li class="option">The Chicago Cubs
+    <input type='image'class="wrong teamLogo indexTwo" id ="chc" alt="Cubbies" src ="http://www.stickpng.com/assets/images/584d41b10a44bd1070d5d411.png"></li>`)
+    $('.teams1').append(`<li class="option">The Dallas Cowboys
+    <input type='image' class="wrong teamLogo indexThree" id ="dal" alt="Dallas Cowboys" src="https://i.pinimg.com/originals/6e/01/97/6e0197b33d0ba5f2ef3d1503e9bc5b45.png"></li>`)
+    $('.teams2').append(`<li class="option">The San Francisco Giants
+    <input type='image' class="right teamLogo indexFour" id ="sfg" alt="SF Giants" src="http://i.imgur.com/Jve0IoB.png"></li>`),
+    $('.teams2').append(`<li class="option">The Boston Celtics
+    <input type='image' class="wrong teamLogo indexFive" id ="celts" alt="Boston Celtics" src ="http://www.stickpng.com/assets/images/58419c6aa6515b1e0ad75a61.png"></li>`)
+    $('.teams2').append(`<li class="option">The Los Angeles Dodgers
+    <input type='image' class="wrong teamLogo indexSix" id ="dodgers" alt="LA Dodgers" src ="http://clipart-library.com/image_gallery/12597.png"></li>`)
+    $('.teams3').append(`<li class="option">The New England Patriots
+    <input type='image' class="wrong teamLogo indexSeven" id ="pats" alt="New England Patroits" src ="http://assets.stickpng.com/thumbs/580b585b2edbce24c47b2b3b.png"></li>  `)
+    $('.teams').hide()
     handleClicks();
+
 }
-
-
+       
+       
 
 function handleClicks(){
        $('.option').on('click',function(event){
@@ -533,4 +550,4 @@ function handleQuizApp(){
     startQuiz();
 }
     
-$(handleQuizApp)
+$(handleQuizApp);
