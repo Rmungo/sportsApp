@@ -12,8 +12,8 @@ const STORE = {
                      answers: [ 
                                     `<li class="option">The New York Yankees
                                         <input type= "image" class="wrong teamLogo" id ="yanks" alt="NY Yankees" src ="http://www.stickpng.com/assets/images/584d4b740a44bd1070d5d494.png"></li>`,
-                                    `<li class="option">The Los Angeles Lakers
-                                        <input type='image'class="wrong teamLogo" id ="lakers" alt="LA Lakers" src ="https://seeklogo.com/images/L/los-angeles-lakers-logo-805BBEB14F-seeklogo.com.png"></li>`,
+                                    `<li class="option">The Chicago Cubs
+                                        <input type='image'class="wrong teamLogo" id ="chc" alt="Cubbies" src ="http://www.stickpng.com/assets/images/584d41b10a44bd1070d5d411.png"></li>`,
                                     `<li class="option">The Dallas Cowboys
                                         <input type='image' class="wrong teamLogo" id ="dal" alt="Dallas Cowboys" src="https://i.pinimg.com/originals/6e/01/97/6e0197b33d0ba5f2ef3d1503e9bc5b45.png"></li>`,
                                     `<li class="option">The San Francisco Giants
@@ -31,9 +31,9 @@ const STORE = {
                      question: 'Question 2: Which of the following is the oldest team in Pro Football History?',
                      answers: [
                                   ` <li class="option">The Green Bay Packers
-                                         <input type='image' class="wrong teamLogo" id ="Pack" alt="Packers" src ="http://www.stickpng.com/assets/images/580b585b2edbce24c47b2b25.png"></li>`,
+                                         <input type='image' class="wrong teamLogo" id ="Pack" alt="Packers" src ="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Green_Bay_Packers_logo.svg/800px-Green_Bay_Packers_logo.svg.png"></li>`,
                                   ` <li class="option">The New York Giants
-                                         <input type='image'class="wrong teamLogo" id ="NYG" alt="NY Giants" src ="http://clipartmag.com/images/football-clear-background-29.png"></li>`,
+                                         <input type='image'class="wrong teamLogo" id ="NYG" alt="NY Giants" src ="http://www.stickpng.com/assets/thumbs/580b585b2edbce24c47b2b42.png"></li>`,
                                   ` <li class="option">The Arizona Cardinals
                                          <input type='image' class="right teamLogo" id ="cards" alt="Az Cardinals" src="http://assets.stickpng.com/thumbs/580b585b2edbce24c47b2aff.png"></li>`,
                                   ` <li class="option">The Pittsburgh Steelers
@@ -52,13 +52,13 @@ const STORE = {
                     question:   'Question 3: Which of the following was the first NBA team to break the color barrier?',
                     answers: [
                                   `<li class="option">The New York Knicks
-                                         <input type="image" class="right teamLogo" id ="nyk" alt="Knicks" src ="http://www.sportsgamblingpodcast.com/sgpod/wp-content/uploads/2017/05/Knicks_Logo.png"></li>`,
+                                         <input type="image" class="right teamLogo" id ="nyk" alt="Knicks" src ="https://upload.wikimedia.org/wikipedia/de/thumb/e/e9/New-York-Knicks-Logo_%281995%29.svg/1024px-New-York-Knicks-Logo_%281995%29.svg.png"></li>`,
                                   `<li class="option">The Golden State Warriors
-                                         <input type="image" class="wrong teamLogo" id ="gsw" alt="Warriors" src ="http://www.stickpng.com/assets/images/58419ce2a6515b1e0ad75a69.png"></li>`,
-                                  `<li class="option">The Utah Jazz
-                                         <input type= "image" class="wrong teamLogo" id ="utah" alt="Jazz" src="https://s3.amazonaws.com/freebiesupply/thumbs/2x/utah-jazz-logo.png"> </li>`,
+                                         <input type="image" class="wrong teamLogo" id ="gsw" alt="Warriors" src ="http://www.officialpsds.com/images/thumbs/Golden-State-Warriors-2013-14-Logo-psd95373.png"></li>`,
+                                  `<li class="option">The Minnesota Timberwolves
+                                         <input type= "image" class="wrong teamLogo" id ="min" alt="Twolves" src="http://logos-download.com/wp-content/uploads/2016/04/Minnesota_Timberwolves_logo_emblem_alternate_3.png"> </li>`,
                                   `<li class="option">The Chicago Bulls
-                                         <input type="image" class="wrong teamLogo" id ="chi" alt="Bulls" src=" https://bullsbrasil.files.wordpress.com/2012/11/chicago_bulls-sem-fundo2.png"></li>`,
+                                         <input type="image" class="wrong teamLogo" id ="chi" alt="Bulls" src="https://www.pngonly.com/wp-content/uploads/2017/05/Bull-PNG-Chicago-Bulls.png"></li>`,
                                   `<li class="option">The Los Angeles Clippers
                                          <input type="image" class="wrong teamLogo" id ="lac" alt="Clippers" src ="https://retohercules.com/images/clippers-logo-png-4.png"></li>`,
                                   `<li class="option">The Houston Rockets
@@ -72,13 +72,13 @@ const STORE = {
                     question: 'Question 4: Which of the following NHL teams recieved a future star player in a trade in which they only had to give up $1?',
                     answers: [
                                   `<li class="option">The Toronto Maple Leafs
-                                         <input type="image" class="wrong teamLogo" id ="leafs" alt="Maple Leafs" src ="http://www.userlogos.org/files/logos/Dopey5150/Toronto%20Maple%20Leafs%202%20copy.png "></li>`,
+                                         <input type="image" class="wrong teamLogo" id ="leafs" alt="Maple Leafs" src ="http://1.bp.blogspot.com/-jJAH_6Wj6ms/T4EGOovvBhI/AAAAAAAALs4/Ax4l4VS8cfA/s1600/OTH67logo.png "></li>`,
                                   `<li class="option">The Edmonton Oilers
                                          <input type="image" class="wrong teamLogo" id ="edm" alt="Oilers" src ="https://www.stickpng.com/assets/images/5a4fbb49da2b4f099b95da0f.png">`,
                                   `<li class="option">The San Jose Sharks 
                                          <input type="image" class="wrong teamLogo" id ="sj" alt="Sharks" src="http://logos-download.com/wp-content/uploads/2016/04/San_Jose_Sharks_logo_logotype_emblem.png"></li>`,
-                                  `<li class="option">The Pittsburgh Penguins
-                                         <input type="image" class="wrong teamLogo" id ="pens" alt="Penguins" src="https://worldsportlogos.com/wp-content/uploads/2018/01/Pittsburgh-Penguins-symbol-600x338.png"></li>`,
+                                  `<li class="option">The Buffalo Sabres
+                                         <input type="image" class="wrong teamLogo" id ="buff" alt="sabres" src="http://logos-download.com/wp-content/uploads/2016/04/Buffalo_Sabres_logo_logotype_symbol_emblem.png"></li>`,
                                   `<li class="option">The New York Rangers
                                         <input type="image" class="wrong teamLogo" id ="nyr" alt="Rangers" src ="https://cdn.freebiesupply.com/logos/large/2x/new-york-rangers-3-logo-png-transparent.png"></li>`,
                                   `<li class="option">The Detroit Red Wings
@@ -195,36 +195,36 @@ const answerPics = {
                              pic1: '<img class="answerPic picOne" src="https://tse4.mm.bing.net/th?id=OIP.vdWaRRPcjYox4uIC5z9v0QHaJ5&pid=Api&P=0&w=300&h=300"alt="Monte Irvin: Giants First Black Player">',
                              pic2: '<img class="answerPic picTwo" src="https://tse3.mm.bing.net/th?id=OIP.MivcL5RA1OluKZuOC86ulgHaEn&pid=Api&P=0&w=303&h=190" alt="Matt Williams: The Marine">',
                              pic3: '<img class="answerPic picThree"src="https://tse2.mm.bing.net/th?id=OIP.92keH2Enda0IVQaI6hYjQQHaE7&pid=Api&P=0&w=235&h=157" alt="Willie Mays: Maybe The Greatest Of All Time">',
-                             pic4: '<img class="answerPic picFour" src="http://s3.amazonaws.com/darkroom-cdn/2014/10/royals-giants-world-series-violence073.jpg" alt="Giants First Title in San Francisco, 2010"> '
+                             pic4: '<img class="answerPic picFour" src="http://s3.amazonaws.com/darkroom-cdn/2014/10/royals-giants-world-series-violence073.jpg" alt="Giants First Title in San Francisco, 2010"> ',
                         },
                         {
                              team: 'Arizona Cardinals ',
-                             pic1: '<img class="answerPic picOne" src="http://cdn.bleacherreport.net/images_root/slides/photos/001/014/297/cardsMorganAthleticClub_display_image.jpg?1308023951"',
+                             pic1: '<img class="answerPic picOne" src="http://cdn.bleacherreport.net/images_root/slides/photos/001/014/297/cardsMorganAthleticClub_display_image.jpg?1308023951">',
                              pic2: '<img class="answerPic picTwo" src="http://www.cardinalsgab.com/wp-content/uploads/2009/12/Kurt-Warner.jpg">',
                              pic3: '<img class="answerPic picThree" src="https://sportsteamhistory.com/wp-content/uploads/2017/01/st.-louis-cardinals-football.jpg">',
-                             pic4: '<img class="answerPic picFour" src="https://clutchpoints.com/wp-content/uploads/2018/10/Larry_Fitzgerald.jpg">'
+                             pic4: '<img class="answerPic picFour" src="https://clutchpoints.com/wp-content/uploads/2018/10/Larry_Fitzgerald.jpg">',
                          },
                          {
                              team: 'New York Knicks',
-                             pic1: '<img class="answerPic picOne" src="https://tse1.mm.bing.net/th?id=OIP.9db8Xbn5xUrtVkeMmsm6sgHaF8&pid=Api&P=0&w=206&h=166"',
+                             pic1: '<img class="answerPic picOne" src="https://tse1.mm.bing.net/th?id=OIP.9db8Xbn5xUrtVkeMmsm6sgHaF8&pid=Api&P=0&w=206&h=166">',
                              pic2: '<img class="answerPic picTwo" src="https://cdn.japantimes.2xx.jp/wp-content/uploads/2018/12/sp-ed-e-20181229-870x698.jpg">',
                              pic3: '<img class="answerPic picThree" src="https://tse3.mm.bing.net/th?id=OIP.NxF1sqx6vOao6HxpL2RS7AHaD4&pid=Api&P=0&w=304&h=160">',
-                             pic4: '<img class="answerPic picFour"src="https://theundefeated.com/wp-content/uploads/2019/11/AP_080910048828-e1574881859339.jpg?w=700">'
+                             pic4: '<img class="answerPic picFour"src="https://theundefeated.com/wp-content/uploads/2019/11/AP_080910048828-e1574881859339.jpg?w=700">',
                           },
                           {
                              team: 'Detroit Red Wings',
-                             pic1: '<img class="answerPic picOne" src="http://www4.pictures.gi.zimbio.com/Dallas+Stars+v+Detroit+Red+Wings+Game+dlltkirDBYkx.jpg"',
-                             pic2: '<img class="answerPic picTwo" src="https://tse4.mm.bing.net/th?id=OIP.O-YQ685EObihAOil9ZMV3gAAAA&pid=Api&P=0&w=300&h=300">',
-                             pic3: '<img class="answerPic picThree" src="https://media.gettyimages.com/photos/center-kris-draper-of-the-detroit-red-wings-shoots-against-the-the-picture-id56442151">',
-                             pic4: '<img class="answerPic picFour"src="https://i.pinimg.com/originals/ec/89/97/ec899753e3efcc2fdff0c71b3555dafb.jpg"> '
+                             pic1: '<img class="answerPic picOne" src="http://media.mlive.com/redwings_impact/photo/kris-draper-red-wings-82f2a1703ef36dc7.jpg">',
+                             pic2: '<img class="answerPic picTwo" src="http://hockeygods.com/system/gallery_images/7006/normal.jpg?1311750062">',
+                             pic3: '<img class="answerPic picThree" src="https://www.gannett-cdn.com/-mm-/d3ebabf4ef4a4e64ead932fed9254bccd29239ae/c=0-30-1268-984/local/-/media/DetroitFreePress/DetroitFreePress/2014/08/26/1409078939018-C4-20080522-SPORTS05-601011-19.jpg?width=520&height=390&fit=crop">',
+                             pic4: '<img class="answerPic picFour"src="http://www4.pictures.gi.zimbio.com/Dallas+Stars+v+Detroit+Red+Wings+Game+dlltkirDBYkx.jpg"> ',
               
                            },
                            {
                              team: 'Oakland Athletics ',
-                             pic1: '<img class="answerPic picOne" src="https://sfbay.ca/home/wp-content/uploads/2016/09/160925_Rangers_Athletics1077_bay114.jpg"',
+                             pic1: '<img class="answerPic picOne" src="https://sfbay.ca/home/wp-content/uploads/2016/09/160925_Rangers_Athletics1077_bay114.jpg">',
                              pic2: '<img class="answerPic picTwo" src="http://sfbay.ca/home/wp-content/uploads/2012/10/2012-08-02-20.31.39-1000x563.jpg">',
                              pic3: '<img class="answerPic picThree" src="http://assets.sbnation.com/assets/1050595/oakland_as_fan_attendance_coliseum.jpg">',
-                             pic4: '<img class="answerPic picFour"src="http://ww3.hdnux.com/photos/07/00/05/1835342/19/628x471.jpg"> '
+                             pic4: '<img class="answerPic picFour"src="http://ww3.hdnux.com/photos/07/00/05/1835342/19/628x471.jpg"> ',
               
                              }
 
@@ -474,6 +474,7 @@ function displayFinalScore(){
        $('.answerInfo').empty();
        $('.getResults').hide();
        $('.restartQuiz').show();
+       $('#correct').addClass('finalTitle');
        restartQuiz();
        if (STORE.answeredCorrectly === 5){
        $('.correctInfo').html(finalResults.scoreTitle[0].title)
