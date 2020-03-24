@@ -394,7 +394,7 @@ function buildAnswerBubble(){
 
 function displayScore(){
        $('.legend').html(`<div class = "counter" id="correctCounter"> 
-       <p class="correctText">Answered Correct: ${STORE.answeredCorrectly} of 5 </p></div>`);
+       <p class="correctText"> Answered Correct: ${STORE.answeredCorrectly} </p></div>`);
   };
 
 function questCount(){
