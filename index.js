@@ -166,8 +166,8 @@ const answerInfo = {
          a member of the famous "Grind Line" in Detroit, consisting of himself, 
          Kirk Maltby and either Joe Kocur or Darren McCarty. The Winnipeg Jets, 
          three years later, would fold and cease operations. Considering that 
-         they traded a player Kris Draper's caliber for merely $1 - it should be 
-         of no suprise to anyone that the Winnipeg Jets are no longer around. `
+         they traded a player of Kris Draper's caliber for merely $1 - it should be 
+         to no one's surprise that the original Winnipeg Jets are no longer around. `
        }, 
        {
          question: 5,
@@ -206,17 +206,17 @@ const answerPics = {
                          },
                          {
                              team: 'New York Knicks',
-                             pic1: '<img class="answerPic picOne" src="https://tse1.mm.bing.net/th?id=OIP.9db8Xbn5xUrtVkeMmsm6sgHaF8&pid=Api&P=0&w=206&h=166">',
+                             pic4: '<img class="answerPic picFour" src="https://tse1.mm.bing.net/th?id=OIP.9db8Xbn5xUrtVkeMmsm6sgHaF8&pid=Api&P=0&w=206&h=166">',
                              pic2: '<img class="answerPic picTwo" src="https://cdn.japantimes.2xx.jp/wp-content/uploads/2018/12/sp-ed-e-20181229-870x698.jpg">',
                              pic3: '<img class="answerPic picThree" src="https://tse3.mm.bing.net/th?id=OIP.NxF1sqx6vOao6HxpL2RS7AHaD4&pid=Api&P=0&w=304&h=160">',
-                             pic4: '<img class="answerPic picFour"src="https://theundefeated.com/wp-content/uploads/2019/11/AP_080910048828-e1574881859339.jpg?w=700">',
+                             pic1: '<img class="answerPic picOne"src="https://theundefeated.com/wp-content/uploads/2019/11/AP_080910048828-e1574881859339.jpg?w=700">',
                           },
                           {
                              team: 'Detroit Red Wings',
                              pic1: '<img class="answerPic picOne" src="http://media.mlive.com/redwings_impact/photo/kris-draper-red-wings-82f2a1703ef36dc7.jpg">',
                              pic2: '<img class="answerPic picTwo" src="http://hockeygods.com/system/gallery_images/7006/normal.jpg?1311750062">',
-                             pic3: '<img class="answerPic picThree" src="https://www.gannett-cdn.com/-mm-/d3ebabf4ef4a4e64ead932fed9254bccd29239ae/c=0-30-1268-984/local/-/media/DetroitFreePress/DetroitFreePress/2014/08/26/1409078939018-C4-20080522-SPORTS05-601011-19.jpg?width=520&height=390&fit=crop">',
-                             pic4: '<img class="answerPic picFour"src="http://www4.pictures.gi.zimbio.com/Dallas+Stars+v+Detroit+Red+Wings+Game+dlltkirDBYkx.jpg"> ',
+                             pic4: '<img class="answerPic picFour" src="https://www.gannett-cdn.com/-mm-/d3ebabf4ef4a4e64ead932fed9254bccd29239ae/c=0-30-1268-984/local/-/media/DetroitFreePress/DetroitFreePress/2014/08/26/1409078939018-C4-20080522-SPORTS05-601011-19.jpg?width=520&height=390&fit=crop">',
+                             pic3: '<img class="answerPic picThree"src="http://www4.pictures.gi.zimbio.com/Dallas+Stars+v+Detroit+Red+Wings+Game+dlltkirDBYkx.jpg"> ',
               
                            },
                            {
@@ -262,7 +262,7 @@ const finalResults = {
                                                          probably not the person we want to give the ball to with the game on the line.
                                                          In any event, you can work hard to seperate yourself from the pack and raise 
                                                          your game and prove me wrong... or you can settle for being A.C Green instead of 
-                                                         Magic Johnson...even the greats need role-players. `
+                                                         Magic Johnson...I mean.....even the greats need role-players, right? `
                                                    },
                                                    {
                                                          score: 2,
@@ -300,39 +300,39 @@ const finalPics = {
                      scorePics: [
                                            {
                                                   score: 5,
-                                                  pic1:`<img class="resultPic" src="http://www.profootballhof.com/assets/1/19/Brooks-Derrick-GJ-Lead.jpg?45270" alt="HOF jacket ceremony"></img> `,
-                                                  pic2: `<img class="resultPic" src="http://sportschump.net/wp-content/uploads/2013/05/chad-ochocinco-hof-jacket.jpg" alt="Future Hall of Famer">`,
+                                                  pic1:`<img class="resultPic lastPic" src="http://www.profootballhof.com/assets/1/19/Brooks-Derrick-GJ-Lead.jpg?45270" alt="HOF jacket ceremony"></img> `,
+                                                  pic2: `<img class="resultPic lastPic" src="http://sportschump.net/wp-content/uploads/2013/05/chad-ochocinco-hof-jacket.jpg" alt="Future Hall of Famer">`,
                                                   pic3: `<img class="resultPic" src="https://s3.amazonaws.com/s3.wpgcfm.radio.com/styles/delta__775x515/s3/ray_lewis.jpg?itok=nlwdkaFX&c=96740be446a2477a37ca698c9e290440" alt="Ray Lewis HOF">`
                                            },
                                            {
                                                   score: 4,
                                                   pic1: `<img class="resultPic" src="https://tse3.mm.bing.net/th?id=OIP.BoeQzMdzwL6Yn4XwbLW-zAHaE8&pid=Api&P=0&w=284&h=190">`,
-                                                  pic2: `<img class="resultPic" src="https://i.ytimg.com/vi/wBCw82QKU1g/maxresdefault.jpg">`,
-                                                  pic3: `<img class="resultPic" src="http://www1.pictures.zimbio.com/gi/2019+Honda+NHL+All+Star+Game+PfxyMlFUBP0x.jpg">` 
+                                                  pic2: `<img class="resultPic lastPic" src="https://i.ytimg.com/vi/wBCw82QKU1g/maxresdefault.jpg">`,
+                                                  pic3: `<img class="resultPic lastPic" src="http://www1.pictures.zimbio.com/gi/2019+Honda+NHL+All+Star+Game+PfxyMlFUBP0x.jpg">` 
                                            },
                                            {
                                                  score: 3,
                                                  pic1: `<img class="resultPic" src="https://www.basketusa.com/wp-content/uploads/2013/09/BJ.jpg">`,
-                                                 pic2: `<img class="resultPic" src="http://www.bestsportsphotos.com/sc_images/products/t_47638.jpg">` ,
-                                                 pic3: `<img class="resultPic" src="https://i.ytimg.com/vi/9OSuzLAZjZQ/maxresdefault.jpg">`
+                                                 pic2: `<img class="resultPic lastPic" src="http://www.bestsportsphotos.com/sc_images/products/t_47638.jpg">` ,
+                                                 pic3: `<img class="resultPic lastPic" src="https://i.ytimg.com/vi/9OSuzLAZjZQ/maxresdefault.jpg">`
                                            },
                                            {
                                                  score: 2,
-                                                 pic1: `<img class="resultPic" src="http://www.saturdaydownsouth.com/wp-content/uploads/2015/03/MG_2345.jpg">` ,
-                                                 pic2: `<img class="resultPic" src="http://static5.businessinsider.com/image/51fa6e926bb3f7933d000008-1200/the-film-room.jpg">` ,
+                                                 pic1: `<img class="resultPic lastPic" src="http://www.saturdaydownsouth.com/wp-content/uploads/2015/03/MG_2345.jpg">` ,
+                                                 pic2: `<img class="resultPic lastPic" src="http://static5.businessinsider.com/image/51fa6e926bb3f7933d000008-1200/the-film-room.jpg">` ,
                                                  pic3: `<img class="resultPic" src="https://patch.com/img/cdn/users/207354/2011/11/raw/fdcdaad88c3c9dde64b7a6e4b0c27acd.jpg?width=705">` 
                                            },
                                            {
                                                  score : 1,
                                                  pic1: `<img class="resultPic" src="http://media.masslive.com/sports_impact/photo/10091180-large.jpg">` ,
-                                                 pic2: `<img class="resultPic" src="http://media.gettyimages.com/photos/soccer-player-sitting-on-bench-picture-id157718601">` ,
-                                                 pic3: `<img class="resultPic" src="http://4.bp.blogspot.com/-In8EZkmSDgs/TfutRDQmEeI/AAAAAAAAAKM/184dEiKZXE8/s1600/sad%2Bfootball%2Bplayer.JPG">`
+                                                 pic2: `<img class="resultPic lastPic" src="http://media.gettyimages.com/photos/soccer-player-sitting-on-bench-picture-id157718601">` ,
+                                                 pic3: `<img class="resultPic lastPic" src="http://4.bp.blogspot.com/-In8EZkmSDgs/TfutRDQmEeI/AAAAAAAAAKM/184dEiKZXE8/s1600/sad%2Bfootball%2Bplayer.JPG">`
                                            },
                                            {
                                                  score : 0,
-                                                 pic1: `<img class="resultPic" src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1217631.jpg">`,
+                                                 pic1: `<img class="resultPic lastPic" src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1217631.jpg">`,
                                                  pic2: `<img class="resultPic" src="http://www.it-career-coach.net/wp-content/uploads/2009/01/pinkslip.jpg">`,
-                                                 pic3: `<img class="resultPic" src="https://www.incimages.com/uploaded_files/image/970x450/getty_618526794_345052.jpg">`
+                                                 pic3: `<img class="resultPic lastPic" src="https://www.incimages.com/uploaded_files/image/970x450/getty_618526794_345052.jpg">`
                                            },
                                            ]
                      }

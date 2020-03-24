@@ -1,12 +1,14 @@
      * {
     box-sizing: border-box;
     font-family: 'patrick hand';
+
 }
 
 body {
     background-image:  
-    linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),url('http://i.imgur.com/KXmAr4e.jpg');
+    linear-gradient( #00000080, rgba(0,0,0,.5) ),url('http://i.imgur.com/KXmAr4e.jpg');
     background-size: cover;
+    min-width: 325px;
 }
 
 .welcome , .questionBubble {
@@ -50,6 +52,7 @@ body {
     justify-content: space-around;
     width: 100%;
     list-style: none;
+    
 } 
 
  .option {
@@ -62,12 +65,11 @@ body {
     border-radius: 15px;
     padding: 5px; 
     text-align: center;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    max-width: 150px;
-    min-width: 130px;
+    max-width: 140px;
+    /* min-width: 130px; */
      
 }  
 
@@ -102,7 +104,7 @@ body {
 }
 
 .correctText{
-width: 200px;
+width: 150px;
 position: relative;
 bottom: 15px;
 left: 15px;
@@ -207,4 +209,105 @@ left: 15px;
     position: relative;
     top: 25px;
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 975px){
+    .teams {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 730px){
+    .option {
+        width: 75px;
+        /* border:none; */
+        /* background-color: black;   */
+        /* color: white;  */
+        /* border: 2px solid white; */
+    }
+    .questionBubble{
+        /* background-color: black; */
+        /* color: white; */
+        /* border: 2px solid white; */
+        width: 450px;
+    }
+    .counter {
+        /* background-color: black; */
+        /* color: white; */
+        /* border: 2px solid white; */
+    }
+    .answerBubble , .welcome {
+        width: 450px;
+    }
+    .picContainer {
+        flex-wrap: wrap;
+    }
+    .questionBubble {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    /* .answerBubble { */
+        /* width: 250px; */
+    /* }
+    .pic1,.pic2, .pic3 {
+        display: none; */
+    /* } */
+
+    .welcome {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 478px){
+    .answerBubble {
+        width: 250px;
+    }
+    .picOne , .picTwo , .picThree {
+        display: none;    
+}
+
+    .redX , .greenCheck {
+        top: 100px;
+        left: 1px;
+    }
+
+    .picFour {
+        position: relative;
+        top: 15px;
+    }
+
+    .lastPic {
+        display: none;
+}
+
+@media screen and (max-width: 383px){
+    .correctText {
+        font-size: small;
+    }
+    #correctCounter {
+        width: 150px;
+        height: 30px;
+        top: 5px;
+    }
+    .counter {
+        width: 150px;
+        height:30px;
+          
+    }
+    .legend2 {
+        width: 50px;
+    }
+
+    .teams {
+        position: relative;
+        top: 100px;
+        right: 20px;
+    }
+
+    .option {
+        margin-bottom: 5px;
+    }
 }
