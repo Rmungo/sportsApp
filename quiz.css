@@ -20,7 +20,6 @@ body {
     top: 15px;
     border-radius: 30px;
     background-color: tan;
-    
 }
 
 .start {
@@ -53,9 +52,6 @@ body {
     
 } 
 
-
-
-
  .option {
      height: 160px; 
     border: 3px solid black;
@@ -70,7 +66,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     max-width: 140px;
-    /* min-width: 130px; */
+    
      
 }  
 
@@ -80,8 +76,6 @@ body {
     position: relative;
     top: 5px;
 }
-
-
 
 .counter {
     height: 40px;
@@ -129,6 +123,12 @@ left: 15px;
     background-color: tan;
     padding:10px;
     
+    
+}
+
+.answerInfo {
+    position: relative;
+    top: 30px;
 }
 
 .correctInfo ,.answerInfo {
@@ -136,17 +136,20 @@ left: 15px;
     font-size: larger;
 }
 
+
+
 #correct {
     font-size: 25px;
+    position: relative;
 } 
 
 .greenCheck {
     height: 30px;
     width: 30px;
-     display: inline-block; 
+    display: inline-block;
     position: relative;
-    right: 125px;
-    top: 55px;
+    top: 5px;
+    right: 3px;
 } 
 
 .legend2 {
@@ -156,7 +159,6 @@ left: 15px;
 
 .picContainer{
     position: relative;
-    bottom: 50px;
     padding: 0;
     display: flex;
     justify-content: space-evenly;
@@ -168,10 +170,6 @@ left: 15px;
     border: 2px solid black;
 }
 
-.checkAndTitle {
-    position: relative;
-    bottom: 50px;
-} 
 
 .extraInfo{
     position: relative;
@@ -183,16 +181,18 @@ left: 15px;
     background-color: green;
     color: white;
     border-radius: 25px;
+    position: relative;
+    top: 30px;
 }
 
 
 .redX {
         height: 40px;
         width: 50px;
-        display: inline-block; 
         position: relative;
-        right: 125px;
-        top: 63px;
+        top: 12px;
+       
+      
 }
 
 .resultPic {
@@ -207,10 +207,12 @@ left: 15px;
 }
 
 .finalTitle{
-    position: relative;
-    top: 25px;
-    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 15px;
 }
+
+
 
 @media screen and (min-width: 800px){
     .teams1 , .teams2 , .teams3 {
@@ -245,7 +247,6 @@ left: 15px;
 
  @media screen and (max-width: 800px){
     .teams1, .teams2, .teams3{
-        /* width: 340px; */
         position: relative;
         right: 10px;
         top: 40px;
@@ -275,14 +276,7 @@ left: 15px;
 .welcome {
     width: 250px;
 }
-} 
-/* 
-@media screen and (max-width:415px){
-    .teams1 {
-       position: relative;
-       left: 50px;
-    }
-} */
+
 
 @media screen and (max-width: 383px){
     .teams1, .teams2, .teams3{
@@ -336,11 +330,11 @@ left: 15px;
         width: 250px;
     }
     
-    }
+}
 
 
      
-
+ }
 
 
 @media screen and (max-width: 730px){
@@ -348,11 +342,6 @@ left: 15px;
         width: 450px;
     }
     
-
-    .redX , .greenCheck {
-        top: 100px;
-        left: 1px;
-    }
     
     .picContainer {
         flex-wrap: wrap;
@@ -371,11 +360,6 @@ left: 15px;
     .picOne , .picTwo , .picThree {
         display: none;    
 }
-
-    .redX , .greenCheck {
-        top: 100px;
-        left: 1px;
-    }
 
     .lastPic {
         display: none;
