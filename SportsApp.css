@@ -215,10 +215,9 @@ left: 15px;
 
 
 @media screen and (min-width: 800px){
-    .teams1 , .teams2 {
+    .teams1 , .teams2 , .teams3 {
         width: 300px;
     }
-
 
     .option{
         min-width: 140px;
@@ -226,21 +225,19 @@ left: 15px;
 
     .teams3 {
         position: relative;
-        left: 995px;
+        left: 875px;
         bottom: 100px;
-        padding: 0;
-        width: 160px;
     }
 
     .teams2 {
         position: relative;
-        left: 625px;
+        left: 595px;
         top: 75px;
     }
 
     .teams1{
         position: relative;
-        left: 205px;
+        left: 175px;
         top: 250px;
     }
 }
